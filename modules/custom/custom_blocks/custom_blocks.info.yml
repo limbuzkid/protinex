@@ -1,0 +1,8 @@
+name: Custom Blocks
+description: All Custom blocks for the site
+core: 8.x
+package: Custom
+dependencies:
+ - node
+ - block
+type: module

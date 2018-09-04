@@ -1,0 +1,29 @@
+<?php
+  
+  /*function custom_ajax_mail($key, &$message, $params) {
+
+    $message['from'] = \Drupal::config('system.site')->get('mail');
+    $Plainttext = "Plaint Text Part";
+    $HTMLpart = "<h1>HTML Part</h1>";
+    switch($key) {
+      case 'TEST_SMTP' :
+        $message['subject'] = 'Test Email from Opensource Wiki';
+        $message['headers'] = array(
+          'MIME-Version' => '1.0',
+          'Content-Type' => "multipart/alternative",
+          'Content-Transfer-Encoding' => '8Bit',
+          'X-Mailer' => 'Drupal'
+        );
+        $message['body'][] = "\r\n--\r\n";
+        $message['body'][] = 'Content-Type: text/plain; charset=utf-8;';
+        $message['body'][] = "$Plainttext";
+        $message['body'][] = "\r\n--\r\n";
+        $message['body'][] = "Content-Type: text/html; charset=utf-8;";
+        $message['body'][] = "$HTMLpart";
+        $message['body'][] = "\r\n-- --\r\n";
+        break;
+    }
+  }*/
+  
+
+  

@@ -1,0 +1,108 @@
+<?php
+
+  use Drupal\taxonomy\Entity\Term;
+
+  /**
+   * Implements hook_preprocess_HOOK() for block templates.
+   * Replace svg to png extention for logo.
+   */
+  
+  function himalaya_preprocess_block(&$variables) {
+    switch ($variables['base_plugin_id']) {
+      case 'system_branding_block':
+        $variables['site_logo'] = '';
+        if ($variables['content']['site_logo']['#access'] && $variables['content']['site_logo']['#uri']) {
+          $variables['site_logo'] = str_replace('.svg', '.png', $variables['content']['site_logo']['#uri']);
+        }
+        break;
+    }
+  }
+
+  function himalaya_page_attachments_alter(array &$attachments) {
+   //echo '<pre>'; print_r($attachments['#attached']['html_head']); echo '</pre>'; exit;
+    foreach ($attachments['#attached']['html_head'] as $key => $attachment) {
+      if ($attachment[1] == 'system_meta_generator' || $attachment[1] == 'viewport') {
+        unset($attachments['#attached']['html_head'][$key]);
+      }
+    }
+  }
+
+  function himalaya_preprocess_page(&$variables) {
+    $variables['logopath'] = '/' . drupal_get_path('theme','himalaya') . '/logo.png';
+    if (\Drupal::routeMatch()->getRouteName() == 'entity.taxonomy_term.canonical') {
+      $term = \Drupal::routeMatch()->getParameter('taxonomy_term');
+      $variables['term'] = $term;
+    }
+  }
+
+  /**
+   * Implements hook_theme_suggestions_HOOK_alter().
+   */
+  function himalaya_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+    if ($node = \Drupal::routeMatch()->getParameter('node')) {
+      //echo '<pre>'; print_r($node); echo '</pre>';
+      $content_type = $node->bundle();
+      //echo $content_type; exit;
+      if($node->nid->value == 14) {
+        $suggestions[] = 'page__recipes';
+      } else if($node->nid->value == 21){
+        $suggestions[] = 'page__contact_us';
+      } else if($node->nid->value == 24){
+        $suggestions[] = 'page__testimonials';
+      } else if($node->nid->value == 41){
+        $suggestions[] = 'page__faqs';
+      } else if($node->nid->value == 53){
+        $suggestions[] = 'page__blog';
+      } else if($node->nid->value == 61){
+        $suggestions[] = 'page__daily_requirements';
+      } else if($node->nid->value == 62){
+        $suggestions[] = 'page__protein_deficiency';
+      } else if($node->nid->value == 63){
+        $suggestions[] = 'page__protein_types';
+      } else if($node->nid->value == 66){
+        $suggestions[] = 'page__media';
+      } else if($node->nid->value == 67){
+        $suggestions[] = 'page__protein_calculator';
+      } else if($node->nid->value == 78){
+        $suggestions[] = 'page__ask_the_experts';
+      } else if($node->nid->value == 76){
+        $suggestions[] = 'page__myths_facts';
+      } else if($node->nid->value == 77){
+        $suggestions[] = 'page__about';
+      } else if($node->nid->value == 86){
+        $suggestions[] = 'page__404';
+      } else if($node->nid->value == 91){
+        $suggestions[] = 'page__why_protein_important';
+      } else if($node->nid->value == 64){
+        $suggestions[] = 'page__terms_conditions';  
+      } else if($node->nid->value == 12){
+        $suggestions[] = 'page__privacy_policy';
+      } else if($node->nid->value == 239){
+        $suggestions[] = 'page__know_protein_know_life';  
+      } else {
+        $suggestions[] = 'page__'.$content_type;
+      }
+    }
+  
+    if (\Drupal::routeMatch()->getRouteName() == 'entity.taxonomy_term.canonical' && $tid = \Drupal::routeMatch()->getRawParameter('taxonomy_term')) {
+      $term = Term::load($tid);
+      if(trim($term->getVocabularyId()) == 'product'){
+        $suggestions[] = 'page__product';
+      }
+    }
+  }
+  
+  function himalaya_theme_suggestions_node_alter(array &$suggestions, array $variables) {
+    if ($node = \Drupal::routeMatch()->getParameter('node')) {
+      //echo '<pre>'; print_r($node); echo '</pre>';
+      $content_type = $node->bundle();
+      if($node->nid->value == 21) {
+        $suggestions[] = 'node__contact_us';
+      }
+      if($node->nid->value == 24) {
+        $suggestions[] = 'node__testimonials';
+      }
+    }
+  }
+  
+ 

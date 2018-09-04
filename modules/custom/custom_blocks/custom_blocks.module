@@ -1,0 +1,20 @@
+<?php
+  
+  /*function custom_blocks_mail($key, &$message, $params) {
+   $options = array(
+     'langcode' => $message['langcode'],
+   );
+  
+   switch ($key) {
+     case 'create_article':
+       $message['from'] = \Drupal::config('system.site')->get('mail');
+       $message['subject'] = t('Article created: @title', array('@title' => $params['node_title']), $options);
+       $message['body'][] = $params['message'];
+       break;
+   }
+  }*/
+  
+
+  
+
+               

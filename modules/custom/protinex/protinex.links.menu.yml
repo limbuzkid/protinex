@@ -1,0 +1,42 @@
+protinex.main:
+  title: 'Protinex'
+  description: 'example of how to make an admin settings page link'
+  parent: system.admin
+  route_name: protinex.content
+  weight: 100
+protinex.ask_the_experts:
+  title: 'Ask the Experts'
+  description: 'example of how to make an admin settings page link'
+  parent: protinex.main
+  route_name: protinex.ask_the_experts
+  weight: 102
+protinex.contact_us:
+  title: 'Contact Us'
+  description: 'example of how to make an admin settings page link'
+  parent: protinex.main
+  route_name: protinex.contact_us
+  weight: 103
+protinex.testimonials:
+  title: 'Testimonials'
+  description: 'example of how to make an admin settings page link'
+  parent: protinex.main
+  route_name: protinex.testimonials
+  weight: 104
+protinex.recipes:
+  title: 'Recipes'
+  description: 'example of how to make an admin settings page link'
+  parent: protinex.main
+  route_name: protinex.recipes
+  weight: 105
+protinex.calculator_data:
+  title: 'Import Calculator Food data'
+  description: 'example of how to make an admin settings page link'
+  parent: protinex.main
+  route_name: protinex.calculator_data
+  weight: 106
+protinex.danone_logo:
+  title: 'Danone Logo'
+  description: 'example of how to make an admin settings page link'
+  parent: protinex.main
+  route_name: protinex.danone_logo
+  weight: 107

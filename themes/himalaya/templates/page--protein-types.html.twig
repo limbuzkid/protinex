@@ -1,0 +1,123 @@
+{#
+/**
+ * @file
+ * Himalaya's theme implementation to display a single page.
+ *
+ */
+#}
+<div id="page-wrapper" class="wrapper sourcesOfProteinTemplate">
+  <header>
+		<div class="container">
+			<div class="hamburger"><span></span><span></span><span></span></div>
+			{{ page.header }}
+			<!--<a class="logo fl" href="/"><img src="{{ logopath }}" /></a>-->
+			{{ page.logo }}
+			<nav class="mainNavs">
+				<a class="searchBtn" href="javascript:;"></a>
+				{{ page.primary_menu }}
+			</nav>
+		</div>
+	</header>
+  <section class="breadcrumbs">
+		{{ page.breadcrumb }}
+	</section>
+	<section class="section bannerSection">
+		<div class="tempBanner">
+			<img src="{{ file_url(node.field_image.entity.uri.value) }}" alt="banner" data-banner="{{ file_url(node.field_image.entity.uri.value) }}" data-banner-mobile="{{ file_url(node.field_mobile_banner_image.entity.uri.value) }}">
+		</div>
+		<div class="bannerWave">
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 width="5760px" height="256.104px" viewBox="0 0 5760 256.104" enable-background="new 0 0 5760 256.104" xml:space="preserve"  preserveAspectRatio="none">
+				<path class="topFill"  fill="#efa23e" d="M0,114.795c121.796,28,273.796,66.667,491.129,5.333c264.626-74.681,416.667-90.667,627.333-18
+					c273.396,94.304,463.596,35.19,616.667-21.333c293.86-108.512,525.837-106.824,806.446-0.348
+					c598.698,227.174,758.009,122.678,939.078,42.444c167-74,393.488-172.591,645.476-81.096c121.144,43.987,320.049,184.506,577,179
+					c280-6,625.486-202,1056.871-106v141.309H0V114.795z"/>
+				<path class="bottomFill" fill="#f2c146" d="M0,157.177c164.327,59.618,342.795,45.618,557.796-39.049c242.612-95.54,438.837-53.94,611.765,13.468
+					c269.455,105.035,524.404,17.174,682.693-30.604c264.211-79.748,504.601-41.485,653.447-2.101
+					c359.236,95.05,524.974,205.49,830.199,86.051c316.537-123.867,609.317-210.178,931.229-62.146
+					c274,126,399.884,106.925,525.109,98.784c177.056-11.51,599.21-178.118,967.762-64.402v98.927H0V157.177z"/>
+				<path class="whiteFill" fill="#FFFFFF" d="M0,214.573c274.994,80.812,403.129-4.777,612.129-95.777c275.455-119.935,463.657-0.523,642.568,57.871
+					c279.025,91.07,556.754-3.617,665.275-30.734c188.249-47.041,464.127-43.249,665.648,2.184
+					c255.703,57.646,470.738,151.178,869.508,18.68c259.875-86.348,536-97.769,804-16c251.557,76.752,435.64,119.716,722.648,47.996
+					c348.1-86.985,642.838-35.496,778.223,15.781v41.531H0V214.573z"/>
+			</svg>
+		</div>
+	</section>
+	{{ page.help }}
+	<section class="section" data-scroll="completed">
+		<div class="container full">
+			<h1 class="center"><strong>WHAT IS PROTEIN?</strong></h1>
+		</div>
+		  </section>
+	<section class="section rightBg">
+		<div class="container">{{ node.body.value|raw }}</div>
+	</section>
+	
+	<section class="section proteinSourcesSec leftBg">
+		<div class="container">
+			<div class="share">
+				<span>Share on</span>
+				<a class="fb" href="javascript:;"></a>
+				<a class="twitter" href="javascript:;"></a>
+		</div>
+			<div class="compoTitle">
+				<h2>Sources of Protein</h2>
+				<p>Protein is everywhere you look. We narrow the popular sources for proteins for all diet types:</p>
+			</div>
+			<div class="sourceList">
+				<ul>
+					{% for item in node.field_content %}
+						<li data-scroll="active">
+							<div class="imgBox svgBox" data-svg="/{{ directory }}/images/sources-of-protein/01_Yellow.svg">
+								<img src="{{ file_url(item.entity.field_content_image.entity.uri.value) }}" alt="{{ item.entity.field_title.value }}">
+							</div>
+							<h3>{{ item.entity.field_title.value }}</h3>
+							{{ item.entity.field_content_body.value|raw }}
+						</li>
+					{% endfor %}																							
+				</ul>
+			</div>
+		</div>
+  </section>
+	<section class="section thePowerOfProteinSec rightBg" data-scroll="">
+    <div class="container">
+			{{ page.know_protein }}
+    </div>
+  </section>
+	
+	<footer id="footer">
+		{% if page.footer %}
+			<div class="ocean">
+				<div class="wave"></div>
+				<div class="wave"></div>
+			</div>
+			{{ page.footer }}
+		{% endif %}
+	</footer>
+	<div class="searchLayer">
+		<span class="close"></span>
+		<div class="formBox">
+		<form action="/search" method="post" id="askForm">
+			<div class="fieldBox wid100 requiredField">
+				<div class="inputBox">
+					<input name="search" id="name" type="text" placeholder="What are you looking for?" />
+				</div>
+			</div>
+			<button type="submit" class="searchBtn"></button>
+		</form>
+		</div>
+	</div>
+	<div class="lBoxMaster">
+		<div class="overlay"></div>
+		<div class="lBox">
+			<span class="close">X</span>
+			<div class="container">
+		    <div class="iframe">
+		      <h3 style="display:none;"></h3>
+			    <iframe width="100%" height="100%" src=""></iframe>
+		    </div>
+				<div class="lContent"></div>
+			</div>
+		</div>
+	</div>
+</div>

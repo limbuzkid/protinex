@@ -1,0 +1,63 @@
+protinex.search:
+  path: '/search'
+  defaults:
+    _controller: '\Drupal\protinex\Controller\ProtinexController::search'
+    _title: 'Search'
+  requirements: 
+    _permission: 'access content'
+protinex.content:
+  path: '/admin/protinex'
+  defaults:
+    _controller: '\Drupal\protinex\Controller\ProtinexController::content'
+    _title: 'Protinex'
+  requirements:
+    _permission: 'access content'
+protinex.ask_the_experts:
+  path: '/admin/protinex/ask-the-experts'
+  defaults:
+    _controller: '\Drupal\protinex\Controller\ProtinexController::askTheExperts'
+    _title: 'Ask the Experts'
+  requirements:
+    _permission: 'access content'
+protinex.contact_us:
+  path: '/admin/protinex/contact-us'
+  defaults:
+    _controller: '\Drupal\protinex\Controller\ProtinexController::contactUs'
+    _title: 'Contact us'
+  requirements:
+    _permission: 'access content'
+protinex.testimonials:
+  path: '/admin/protinex/testimonials'
+  defaults:
+    _controller: '\Drupal\protinex\Controller\ProtinexController::testimonials'
+    _title: 'Testimonials'
+  requirements:
+    _permission: 'access content'
+protinex.recipes:
+  path: '/admin/protinex/recipes'
+  defaults:
+    _controller: '\Drupal\protinex\Controller\ProtinexController::recipes'
+    _title: 'Recipes'
+  requirements:
+    _permission: 'access content'
+protinex.danone_logo:
+  path: '/admin/protinex/danone-logo'
+  defaults:
+    _form: '\Drupal\protinex\Form\UploadLogoForm'
+    _title: 'Danone Logo'
+  requirements:
+    _permission: 'access content'
+protinex.calculator_data:
+  path: '/admin/protinex/calculator-data'
+  defaults:
+    _form: '\Drupal\protinex\Form\CalculatorDataForm'
+    _title: 'Import Calculator Data'
+  requirements:
+    _permission: 'access content'
+protinex.downloads:
+  path: 'admin/protinex/downloads'
+  defaults:
+    _title: 'CSV Export'
+    _controller: '\Drupal\protinex\Controller\ProtinexController::downloads'
+  requirements:
+    _permission: 'access administration pages'

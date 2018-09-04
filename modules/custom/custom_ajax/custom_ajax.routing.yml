@@ -1,0 +1,48 @@
+custom_ajax.recipes_load_more:
+  path: '/ajax/recipes-load-more'
+  defaults:
+    _title: 'Recipes'
+    _controller: '\Drupal\custom_ajax\Controller\AjaxController::recipes_load_more'
+  requirements:
+    _access: 'TRUE'
+    _method: 'POST'
+custom_ajax.testimonial_load_more:
+  path: '/ajax/testimonial-load-more'
+  defaults:
+    _title: 'Testimonial'
+    _controller: '\Drupal\custom_ajax\Controller\AjaxController::testimonial_load_more'
+  requirements:
+    _access: 'TRUE'
+    _method: 'POST'
+custom_ajax.get_token:
+  path: '/ajax/get-token'
+  defaults:
+    _title: 'Token'
+    _controller: '\Drupal\custom_ajax\Controller\AjaxController::get_token'
+  requirements:
+    _access: 'TRUE'
+    _method: 'POST'
+custom_ajax.calculator_food_items:
+  path: '/ajax/calculator-food-items'
+  defaults:
+    _title: 'Calculator'
+    _controller: '\Drupal\custom_ajax\Controller\AjaxController::calculator_food_items'
+  requirements:
+    _access: 'TRUE'
+    _method: 'POST'
+custom_ajax.ask_the_experts:
+  path: '/ajax/ask-the-experts'
+  defaults:
+    _title: 'Ask The Experts'
+    _controller: '\Drupal\custom_ajax\Controller\AjaxController::ask_the_experts'
+  requirements:
+    _access: 'TRUE'
+    _method: 'POST'
+custom_ajax.get_calci_result:
+  path: '/ajax/get-calci-result'
+  defaults:
+    _title: 'Calculator Results'
+    _controller: '\Drupal\custom_ajax\Controller\AjaxController::get_calci_result'
+  requirements:
+    _access: 'TRUE'
+    _method: 'POST'

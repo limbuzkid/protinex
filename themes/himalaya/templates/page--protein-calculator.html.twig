@@ -1,0 +1,1507 @@
+{#
+/**
+* @file
+* Himalaya's theme implementation to display a single page.
+*
+*/
+#}
+<div id="page-wrapper" class="wrapper calcTemplate">
+	<header>
+		<div class="container">
+			<div class="hamburger"><span></span><span></span><span></span></div>
+			{{ page.header }}
+			{{ page.logo }}
+			<nav class="mainNavs">
+				<a class="searchBtn" href="javascript:;"></a>
+				{{ page.primary_menu }}
+			</nav>
+		</div>
+	</header>
+	<section class="breadcrumbs">
+		{{ page.breadcrumb }}
+	</section>
+
+	<section class="section protineCalc">
+		<div class="container">
+			<div class="protine-calc">
+				<div id="letsStart" class="calcSteps columnMaster vCenter">
+					<div class="column wid50 tCenter">
+						<div class="imgBox">
+							<img src="{{ file_url(node.field_image.entity.uri.value) }}" alt="Let's count">
+						</div>
+					</div>
+					<div class="column wid50">
+						<h1 class="redText">{{ node.title.value|upper }}</h1>
+						{{ node.body.value|raw }}
+					</div>
+				</div>
+				<div id="letsGet" class="calcSteps columnMaster vCenter">
+					<div class="column wid50 tCenter">
+						<div class="imgBox">
+							<img src="{{ directory }}/images/calculator-protines.png" alt="">
+						</div>
+					</div>
+
+					<div class="column wid40">
+						<h2 class="title">Let us get to know you a little bit...</h2>
+						<div class="fieldBox requiredField wid66">
+							<div class="inputBox">
+								<input name="Name" id="name" data-label="true" type="text" placeholder="Name" data-validation="required,minLength3" />
+								<span class="error">This field is required.</span>
+							</div>
+						</div>
+						<div class="fieldBox requiredField wid33">
+							<div class="inputBox">
+								<input class="numericOnly" name="Name" id="age" data-label="true" type="text" placeholder="Age" maxlength="3" data-validation="required,minLength2" />
+								<span class="error">This field is required.</span>
+							</div>
+							<!--<span class="note">18 years & above only</span>-->
+						</div>
+						<div class="genderRadioSec">
+							<label>Gender</label>
+							<div class="radioBox wid100 requiredField">
+								<ul>
+									<li>
+										<input type="radio" name="gender" id="male">
+										<label for="male">Male</label>
+									</li>
+									<li>
+										<input type="radio" name="gender" id="female">
+										<label for="female">Female</label>
+									</li>
+								</ul>
+								<span class="error">This field is required.</span>
+							</div>
+							<div class="toolSec">
+								<a class="closeBtn" href="javascript:;">X</a>
+								<p>to be selected only if applicable to you</p>
+								<div class="checkBox">
+									<input type="checkbox" id="diabetic">
+									<label for="diabetic">I am a diabetic</label>
+								</div>
+							</div>
+							<div class="toolSec">
+								<a class="closeBtn" href="javascript:;">X</a>
+								<p>to be selected only if applicable to you</p>
+								<div class="checkBox">
+									<input type="checkbox" id="pregnant">
+									<label for="pregnant">I am pregnant</label>
+									<input type="checkbox" id="breastFeeding">
+									<label for="breastFeeding">Breast feeding</label>
+									<input type="checkbox" id="diabetic2">
+									<label for="diabetic2">I am a diabetic</label>
+								</div>
+							</div>
+						</div>
+						<i class="clear"></i>
+
+						<div class="measurementSec">
+							<div class="fieldBox requiredField wid50">
+								<div class="inputBox">
+									<input class="numericOnly" name="Height" id="height" maxlength="3" data-label="true" type="text" placeholder="Height in Cms" data-validation="required,minLength3" />
+									<span class="error">This field is required.</span>
+								</div>
+							</div>
+							<div class="fieldBox requiredField wid50">
+								<div class="inputBox">
+										<input class="numericOnly" name="Weight" id="weight" data-label="true" maxlength="3" type="text" placeholder="Weight in Kgs" data-validation="required,minLength3" />
+										<span class="error">This field is required.</span>
+								</div>
+							</div>
+						</div>
+						<a id="letsGetBtn" href="javascript:;" class="btn red fr">Next</a>
+					</div>
+				</div>
+
+				<div id="breakfast" class="calcSteps columnMaster vCenter">
+					<a class="backBtn" href="javascript:;">Back</a>
+					<div class="column wid50 tCenter">
+						<div class="imgBox">
+							<img src="{{ directory }}/images/breakfast.png" alt="">
+						</div>
+					</div>
+					<div class="column wid40">
+						<h2 class="title">Breakfast</h2>
+						<p>Arguably the most important meal to fuel your day.</p>
+						<div class="innerContainer">
+							<div class="userNameSec">
+								<h3>Hi, Chandna Patil</h3>
+								<p>Please input what you had in between your getting up and having your Lunch.</p>
+							</div>
+						
+							<div class="foodItemsSec">
+								<ul class="lists">
+									<li class="makeItclone">
+										<a class="removeLi" href="javascript:;"></a>
+										<div class="fieldBox requiredField wid100">
+											<div class="inputBox">
+												<input name="breakfast" id="bkfastP" data-label="true" placeholder="Food Items" type="text" data-validation="required" />
+												<span class="error">This field is required.</span>
+											</div>
+											<div class="itemListContainer">
+												<ul></ul>
+											</div>
+										</div>
+
+										<div class="itemTypeSec">
+											<div class="genderRadioSec no">
+												<label>Choose No.</label>
+												<div class="radioBox wid100 requiredField">
+													<div class="selectBox">
+														<label>Food Items</label>
+														<div class="selectedValue">Food Items</div>
+														<select>
+															<option>Select No.</option>
+															<option data-count="1">1</option>
+															<option data-count="2">2</option>
+															<option data-count="3">3</option>
+															<option data-count="4">4</option>
+															<option data-count="5">5</option>
+														</select>
+														<span class="error">This field is required.</span>
+													</div>
+												</div>
+											</div>
+											<div class="genderRadioSec cup">
+												<label>Choose protion cup</label>
+												<div class="radioBox wid100 requiredField">
+													<div class="selectBox">
+														<label>Food Items</label>
+														<div class="selectedValue">Food Items</div>
+														<select>
+															<option>select cup.</option>
+															<option data-count="1">1 cup</option>
+															<option data-count="2">2 cup</option>
+															<option data-count="3">3 cup</option>
+															<option data-count="4">4 cup</option>
+															<option data-count="5">5 cup</option>
+														</select>
+														<span class="error">This field is required.</span>
+													</div>
+												</div>
+											</div>
+											<div class="genderRadioSec plate">
+												<label>Choose plate</label>
+												<div class="radioBox wid100 requiredField">
+													<div class="selectBox">
+														<label>Food Items</label>
+														<div class="selectedValue">Food Items</div>
+														<select>
+															<option>Select plate</option>
+															<option data-count="1">1 plate</option>
+															<option data-count="2">2 plate</option>
+															<option data-count="3">3 plate</option>
+															<option data-count="4">4 plate</option>
+															<option data-count="5">5 plate</option>
+															<option data-count="6">6 plate</option>
+															<option data-count="7">7 plate</option>
+															<option data-count="8">8 plate</option>
+														</select>
+														<span class="error">This field is required.</span>
+													</div>
+												</div>
+											</div>
+											<div class="genderRadioSec bowl">
+												<label>Choose bowl</label>
+												<div class="radioBox wid100 requiredField">
+													<div class="selectBox">
+														<label>Food Items</label>
+														<div class="selectedValue">Food Items</div>
+														<select>
+															<option>Select bowl</option>
+															<option data-count="1">1 bowl</option>
+															<option data-count="2">2 bowl</option>
+															<option data-count="3">3 bowl</option>
+															<option data-count="4">4 bowl</option>
+															<option data-count="5">5 bowl</option>
+															<option data-count="6">6 bowl</option>
+															<option data-count="7">7 bowl</option>
+															<option data-count="8">8 bowl</option>
+														</select>
+														<span class="error">This field is required.</span>
+													</div>
+												</div>
+											</div>
+											<div class="genderRadioSec slice">
+												<label>Choose slice</label>
+												<div class="radioBox wid100 requiredField">
+													<div class="selectBox">
+														<label>Food Items</label>
+														<div class="selectedValue">Food Items</div>
+														<select>
+															<option>Select slice</option>
+															<option data-count="1">1 slice</option>
+															<option data-count="2">2 slice</option>
+															<option data-count="3">3 slice</option>
+															<option data-count="4">4 slice</option>
+															<option data-count="5">5 slice</option>
+															<option data-count="6">6 slice</option>
+															<option data-count="7">7 slice</option>
+															<option data-count="8">8 slice</option>
+														</select>
+														<span class="error">This field is required.</span>
+													</div>
+												</div>
+											</div>
+											<div class="genderRadioSec ml">
+												<label>Choose ml</label>
+												<div class="radioBox wid100 requiredField">
+													<div class="selectBox">
+														<label>Food Items</label>
+														<div class="selectedValue">Food Items/100ml</div>
+														<select>
+															<option>Select option/100ml</option>
+															<option data-count="1">1</option>
+															<option data-count="2">2</option>
+															<option data-count="3">3</option>
+															<option data-count="4">4</option>
+															<option data-count="5">5</option>
+														</select>
+														<span class="error">This field is required.</span>
+													</div>
+												</div>
+											</div>
+											<div class="genderRadioSec katori">
+												<label>Choose katori</label>
+												<div class="radioBox wid100 requiredField">
+													<div class="selectBox">
+														<label>Food Items</label>
+														<div class="selectedValue">Food Items</div>
+														<select>
+															<option>Select katori</option>
+															<option data-count="1">1 katori</option>
+															<option data-count="2">2 katori</option>
+															<option data-count="3">3 katori</option>
+															<option data-count="4">4 katori</option>
+															<option data-count="5">5 katori</option>
+														</select>
+														<span class="error">This field is required.</span>
+													</div>
+												</div>
+											</div>
+												<div class="genderRadioSec glass">
+													<label>Choose glass</label>
+													<div class="radioBox wid100 requiredField">
+														<div class="selectBox">
+															<label>Food Items</label>
+															<div class="selectedValue">Food Items</div>
+															<select>
+																<option>Select glass</option>
+																<option data-count="1">1 glass</option>
+																<option data-count="2">2 glass</option>
+																<option data-count="3">3 glass</option>
+																<option data-count="4">4 glass</option>
+																<option data-count="5">5 glass</option>
+															</select>
+															<span class="error">This field is required.</span>
+														</div>
+													</div>
+												</div>
+												<div class="genderRadioSec slice150gm">
+													<label>Choose slice/(150gm)</label>
+													<div class="radioBox wid100 requiredField">
+														<div class="selectBox">
+															<label>Food Items</label>
+															<div class="selectedValue">Food Items/150gm</div>
+															<select>
+																<option>Select slice</option>
+																<option data-count="1">1 slice</option>
+																<option data-count="2">2 slice</option>
+																<option data-count="3">3 slice</option>
+																<option data-count="4">4 slice</option>
+																<option data-count="5">5 slice</option>
+															</select>
+															<span class="error">This field is required.</span>
+														</div>
+													</div>
+												</div>
+												<div class="genderRadioSec piece125gms">
+													<label>Choose piece/125gms</label>
+													<div class="radioBox wid100 requiredField">
+														<div class="selectBox">
+															<label>Food Items</label>
+															<div class="selectedValue">Food Items</div>
+															<select>
+																<option>Select piece</option>
+																<option data-count="1">1 piece</option>
+																<option data-count="2">2 piece</option>
+																<option data-count="3">3 piece</option>
+																<option data-count="4">4 piece</option>
+																<option data-count="5">5 piece</option>
+															</select>
+															<span class="error">This field is required.</span>
+														</div>
+													</div>
+												</div>
+												<div class="genderRadioSec no150gms">
+													<label>Choose no/150gms</label>
+													<div class="radioBox wid100 requiredField">
+														 <div class="selectBox">
+															<label>Food Items</label>
+															<div class="selectedValue">Food Items</div>
+															<select>
+																<option>Select No.</option>
+																<option data-count="1">1</option>
+																<option data-count="2">2</option>
+																<option data-count="3">3</option>
+																<option data-count="4">4</option>
+																<option data-count="5">5</option>
+															</select>
+															<span class="error">This field is required.</span>
+														</div>
+													</div>
+												</div>
+												<div class="genderRadioSec nomed">
+													<label>Choose no</label>
+													<div class="radioBox wid100 requiredField">
+														<div class="selectBox">
+															<label>Food Items</label>
+															<div class="selectedValue">Food Items</div>
+															<select>
+																<option>Select No.</option>
+																<option data-count="1">1</option>
+																<option data-count="2">2</option>
+																<option data-count="3">3</option>
+																<option data-count="4">4</option>
+																<option data-count="5">5</option>
+															</select>
+															<span class="error">This field is required.</span>
+														</div>
+													</div>
+												</div>
+												<div class="genderRadioSec nomedium">
+													<label>Choose No.</label>
+													<div class="radioBox wid100 requiredField">
+														 <div class="selectBox">
+															<label>Food Items</label>
+															<div class="selectedValue">Food Items</div>
+															<select>
+																<option>Select No.</option>
+																<option data-count="1">1</option>
+																<option data-count="2">2</option>
+																<option data-count="3">3</option>
+																<option data-count="4">4</option>
+																<option data-count="5">5</option>
+															</select>
+															<span class="error">This field is required.</span>
+														</div>
+													</div>
+												</div>
+												<div class="genderRadioSec gms">
+													<label>Choose item/100gms</label>
+													<div class="radioBox wid100 requiredField">
+														<div class="selectBox">
+															<label>Food Items</label>
+															<div class="selectedValue">Food Items</div>
+															<select>
+																<option>Select option</option>
+																<option data-count="1">1</option>
+																<option data-count="2">2</option>
+																<option data-count="3">3</option>
+																<option data-count="4">4</option>
+																<option data-count="5">5</option>
+															</select>
+															<span class="error">This field is required.</span>
+														</div>
+													</div>
+												</div>
+												<div class="genderRadioSec smallplate">
+													<label>Choose plate</label>
+													<div class="radioBox wid100 requiredField">
+														<div class="selectBox">
+															<label>Food Items</label>
+															<div class="selectedValue">Food Items</div>
+															<select>
+																<option>Select Plate</option>
+																<option data-count="1">1</option>
+																<option data-count="2">2</option>
+																<option data-count="3">3</option>
+																<option data-count="4">4</option>
+																<option data-count="5">5</option>
+															</select>
+															<span class="error">This field is required.</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<a href="javascript:;" class="btn gray fl addMoreBtn"><span></span>Add More</a>
+									<a id="breakfastBtn" href="javascript:;" class="btn red fr">Next</a>
+								</div>
+								<i class="clear"></i>
+							</div>
+						</div>
+					</div>
+
+<div id="lunch" class="calcSteps columnMaster vCenter">
+<a class="backBtn" href="javascript:;">Back</a>
+<div class="column wid50 tCenter">
+<div class="imgBox">
+<img src="{{ directory }}/images/lunch.png" alt="">
+</div>
+</div>
+
+<div class="column wid40">
+<h2 class="title">Lunch</h2>
+<p>A key part of our Balanced diet is what we eat at lunch.</p>
+<div class="innerContainer">
+	<div class="userNameSec">
+		<h3>Hi, Chandna Patil</h3>
+		<p>Please enter what you had for lunch</p>
+	</div>
+						
+<div class="foodItemsSec">
+<ul class="lists">
+	<li class="makeItclone">
+		<a class="removeLi" href="javascript:;"></a>
+		<div class="fieldBox requiredField wid100">
+			<div class="inputBox">
+				<input name="lunch" id="lunchP" data-label="true" placeholder="Food Items" type="text" data-validation="required" />
+				<span class="error">This field is required.</span>
+			</div>
+			<div class="itemListContainer">
+				<ul></ul>
+			</div>
+		</div>
+		<div class="itemTypeSec">
+				<div class="genderRadioSec no">
+						<label>Choose No.</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select No.</option>
+											<option data-count="1">1</option>
+											<option data-count="2">2</option>
+											<option data-count="3">3</option>
+											<option data-count="4">4</option>
+											<option data-count="5">5</option>
+											<option data-count="6">6</option>
+											<option data-count="7">7</option>
+											<option data-count="8">8</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec cup">
+						<label>Choose protion cup</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>select cup.</option>
+											<option data-count="1">1 cup</option>
+											<option data-count="2">2 cup</option>
+											<option data-count="3">3 cup</option>
+											<option data-count="4">4 cup</option>
+											<option data-count="5">5 cup</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec plate">
+						<label>Choose plate</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select plate</option>
+											<option data-count="1">1 plate</option>
+											<option data-count="2">2 plate</option>
+											<option data-count="3">3 plate</option>
+											<option data-count="4">4 plate</option>
+											<option data-count="5">5 plate</option>
+											<option data-count="6">6 plate</option>
+											<option data-count="7">7 plate</option>
+											<option data-count="8">8 plate</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec bowl">
+						<label>Choose bowl</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select bowl</option>
+											<option data-count="1">1 bowl</option>
+											<option data-count="2">2 bowl</option>
+											<option data-count="3">3 bowl</option>
+											<option data-count="4">4 bowl</option>
+											<option data-count="5">5 bowl</option>
+											<option data-count="6">6 bowl</option>
+											<option data-count="7">7 bowl</option>
+											<option data-count="8">8 bowl</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec slice">
+						<label>Choose slice</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select slice</option>
+											<option data-count="1">1 slice</option>
+											<option data-count="2">2 slice</option>
+											<option data-count="3">3 slice</option>
+											<option data-count="4">4 slice</option>
+											<option data-count="5">5 slice</option>
+											<option data-count="6">6 slice</option>
+											<option data-count="7">7 slice</option>
+											<option data-count="8">8 slice</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec ml">
+						<label>Choose ml</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items/100ml</div>
+										<select>
+											<option>Select option/100ml</option>
+											<option data-count="1">1</option>
+											<option data-count="2">2</option>
+											<option data-count="3">3</option>
+											<option data-count="4">4</option>
+											<option data-count="5">5</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec katori">
+						<label>Choose katori</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select katori</option>
+											<option data-count="1">1 katori</option>
+											<option data-count="2">2 katori</option>
+											<option data-count="3">3 katori</option>
+											<option data-count="4">4 katori</option>
+											<option data-count="5">5 katori</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec glass">
+						<label>Choose glass</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select glass</option>
+											<option data-count="1">1 glass</option>
+											<option data-count="2">2 glass</option>
+											<option data-count="3">3 glass</option>
+											<option data-count="4">4 glass</option>
+											<option data-count="5">5 glass</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec slice150gm">
+						<label>Choose slice/(150gm)</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items/150gm</div>
+										<select>
+											<option>Select slice</option>
+											<option data-count="1">1 slice</option>
+											<option data-count="2">2 slice</option>
+											<option data-count="3">3 slice</option>
+											<option data-count="4">4 slice</option>
+											<option data-count="5">5 slice</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec piece125gms">
+						<label>Choose piece/125gms</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select piece</option>
+											<option data-count="1">1 piece</option>
+											<option data-count="2">2 piece</option>
+											<option data-count="3">3 piece</option>
+											<option data-count="4">4 piece</option>
+											<option data-count="5">5 piece</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec no150gms">
+						<label>Choose no/150gms</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select No.</option>
+											<option data-count="1">1</option>
+											<option data-count="2">2</option>
+											<option data-count="3">3</option>
+											<option data-count="4">4</option>
+											<option data-count="5">5</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec nomed">
+						<label>Choose no.</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select No.</option>
+											<option data-count="1">1</option>
+											<option data-count="2">2</option>
+											<option data-count="3">3</option>
+											<option data-count="4">4</option>
+											<option data-count="5">5</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec nomedium">
+						<label>Choose no</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>ml</option>
+											<option data-count="1">1</option>
+											<option data-count="2">2</option>
+											<option data-count="3">3</option>
+											<option data-count="4">4</option>
+											<option data-count="5">5</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec gms">
+						<label>Choose item/100gms</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select option</option>
+											<option data-count="1">1</option>
+											<option data-count="2">2</option>
+											<option data-count="3">3</option>
+											<option data-count="4">4</option>
+											<option data-count="5">5</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec smallplate">
+						<label>Choose plate</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select Plate</option>
+											<option data-count="1">1</option>
+											<option data-count="2">2</option>
+											<option data-count="3">3</option>
+											<option data-count="4">4</option>
+											<option data-count="5">5</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+		</div>
+</li>
+</ul>
+<a href="javascript:;" class="btn gray fl addMoreBtn"><span></span>Add More</a>
+<a id="lunchBtn" href="javascript:;" class="btn red fr">Next</a>
+</div>
+</div>
+<i class="clear"></i>
+</div>
+</div>
+
+<div id="Snacks" class="calcSteps columnMaster vCenter">
+<a class="backBtn" href="javascript:;">Back</a>
+<div class="column wid50 tCenter">
+<div class="imgBox">
+<img src="{{ directory }}/images/snacks.png" alt="">
+</div>
+</div>
+
+<div class="column wid40">
+<h2 class="title">Snacks</h2>
+<p>Nibbles throughout the day will prevent binge eating.</p>
+<div class="innerContainer">
+<div class="userNameSec">
+<h3>Hi, Chandna Patil</h3>
+<p>Please enter what you had for snacks</p>
+</div>
+						
+<div class="foodItemsSec">
+<ul class="lists">
+	<li class="makeItclone">
+		<a class="removeLi" href="javascript:;"></a>
+		<div class="fieldBox requiredField wid100">
+					<div class="inputBox">
+						<input name="snacks" id="snacksP" data-label="true" placeholder="Food Items" type="text" data-validation="required" />
+						<span class="error">This field is required.</span>
+					</div>
+					<div class="itemListContainer">
+						<ul></ul>
+					</div>
+				</div>
+		<div class="itemTypeSec">
+				<div class="genderRadioSec no">
+						<label>Choose No.</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select No.</option>
+											<option data-count="1">1</option>
+											<option data-count="2">2</option>
+											<option data-count="3">3</option>
+											<option data-count="4">4</option>
+											<option data-count="5">5</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec cup">
+						<label>Choose protion cup</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>select cup.</option>
+											<option data-count="1">1 cup</option>
+											<option data-count="2">2 cup</option>
+											<option data-count="3">3 cup</option>
+											<option data-count="4">4 cup</option>
+											<option data-count="5">5 cup</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec plate">
+						<label>Choose plate</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select plate</option>
+											<option data-count="1">1 plate</option>
+											<option data-count="2">2 plate</option>
+											<option data-count="3">3 plate</option>
+											<option data-count="4">4 plate</option>
+											<option data-count="5">5 plate</option>
+											<option data-count="6">6 plate</option>
+											<option data-count="7">7 plate</option>
+											<option data-count="8">8 plate</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec bowl">
+						<label>Choose bowl</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select bowl</option>
+											<option data-count="1">1 bowl</option>
+											<option data-count="2">2 bowl</option>
+											<option data-count="3">3 bowl</option>
+											<option data-count="4">4 bowl</option>
+											<option data-count="5">5 bowl</option>
+											<option data-count="6">6 bowl</option>
+											<option data-count="7">7 bowl</option>
+											<option data-count="8">8 bowl</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec slice">
+						<label>Choose slice</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select slice</option>
+											<option data-count="1">1 slice</option>
+											<option data-count="2">2 slice</option>
+											<option data-count="3">3 slice</option>
+											<option data-count="4">4 slice</option>
+											<option data-count="5">5 slice</option>
+											<option data-count="6">6 slice</option>
+											<option data-count="7">7 slice</option>
+											<option data-count="8">8 slice</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec ml">
+						<label>Choose ml</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items/100ml</div>
+										<select>
+											<option>Select option/100ml</option>
+											<option data-count="1">1</option>
+											<option data-count="2">2</option>
+											<option data-count="3">3</option>
+											<option data-count="4">4</option>
+											<option data-count="5">5</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec katori">
+						<label>Choose katori</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select katori</option>
+											<option data-count="1">1 katori</option>
+											<option data-count="2">2 katori</option>
+											<option data-count="3">3 katori</option>
+											<option data-count="4">4 katori</option>
+											<option data-count="5">5 katori</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec glass">
+						<label>Choose glass</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select glass</option>
+											<option data-count="1">1 glass</option>
+											<option data-count="2">2 glass</option>
+											<option data-count="3">3 glass</option>
+											<option data-count="4">4 glass</option>
+											<option data-count="5">5 glass</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec slice150gm">
+						<label>Choose slice/(150gm)</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items/150gm</div>
+										<select>
+											<option>Select slice</option>
+											<option data-count="1">1 slice</option>
+											<option data-count="2">2 slice</option>
+											<option data-count="3">3 slice</option>
+											<option data-count="4">4 slice</option>
+											<option data-count="5">5 slice</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec piece125gms">
+						<label>Choose piece/125gms</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select piece</option>
+											<option data-count="1">1 piece</option>
+											<option data-count="2">2 piece</option>
+											<option data-count="3">3 piece</option>
+											<option data-count="4">4 piece</option>
+											<option data-count="5">5 piece</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec no150gms">
+						<label>Choose no/150gms</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select No.</option>
+											<option data-count="1">1</option>
+											<option data-count="2">2</option>
+											<option data-count="3">3</option>
+											<option data-count="4">4</option>
+											<option data-count="5">5</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec nomed">
+						<label>Choose no</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select No.</option>
+											<option data-count="1">1</option>
+											<option data-count="2">2</option>
+											<option data-count="3">3</option>
+											<option data-count="4">4</option>
+											<option data-count="5">5</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec nomedium">
+						<label>Choose no</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>ml</option>
+											<option data-count="1">1</option>
+											<option data-count="2">2</option>
+											<option data-count="3">3</option>
+											<option data-count="4">4</option>
+											<option data-count="5">5</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec gms">
+						<label>Choose item/100gms</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select option</option>
+											<option data-count="1">1</option>
+											<option data-count="2">2</option>
+											<option data-count="3">3</option>
+											<option data-count="4">4</option>
+											<option data-count="5">5</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec smallplate">
+						<label>Choose plate</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select Plate</option>
+											<option data-count="1">1</option>
+											<option data-count="2">2</option>
+											<option data-count="3">3</option>
+											<option data-count="4">4</option>
+											<option data-count="5">5</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+		</div>
+	</li>
+</ul>
+<a href="javascript:;" class="btn gray fl addMoreBtn"><span></span>Add More</a>
+<a id="SnacksBtn" href="javascript:;" class="btn red fr">Next</a>
+</div>
+</div>
+<i class="clear"></i>
+</div>
+</div>
+
+<div id="Dinner" class="calcSteps columnMaster vCenter">
+<a class="backBtn" href="javascript:;">Back</a>
+<div class="column wid50 tCenter">
+<div class="imgBox">
+<img src="{{ directory }}/images/dinner.png" alt="">
+</div>
+</div>
+
+<div class="column wid40">
+<h2 class="title">Dinner</h2>
+<p>Light but wholesome dinners are important for fast digestion.</p>
+<div class="innerContainer">
+<div class="userNameSec">
+<h3>Hi, Chandna Patil</h3>
+<p>Please enter what you had for dinner</p>
+</div>
+						
+<div class="foodItemsSec">
+<ul class="lists">
+	<li class="makeItclone">
+		<a class="removeLi" href="javascript:;"></a>
+		<div class="fieldBox requiredField wid100">
+					<div class="inputBox">
+						<input name="dinner" id="dinnerP" data-label="true" placeholder="Food Items" type="text" data-validation="required" />
+						<span class="error">This field is required.</span>
+					</div>
+					<div class="itemListContainer">
+						<ul></ul>
+					</div>
+				</div>
+		<div class="itemTypeSec">
+				<div class="genderRadioSec no">
+						<label>Choose No.</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select No.</option>
+											<option data-count="1">1</option>
+											<option data-count="2">2</option>
+											<option data-count="3">3</option>
+											<option data-count="4">4</option>
+											<option data-count="5">5</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec cup">
+						<label>Choose protion cup</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>select cup.</option>
+											<option data-count="1">1 cup</option>
+											<option data-count="2">2 cup</option>
+											<option data-count="3">3 cup</option>
+											<option data-count="4">4 cup</option>
+											<option data-count="5">5 cup</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec plate">
+						<label>Choose plate</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select plate</option>
+											<option data-count="1">1 plate</option>
+											<option data-count="2">2 plate</option>
+											<option data-count="3">3 plate</option>
+											<option data-count="4">4 plate</option>
+											<option data-count="5">5 plate</option>
+											<option data-count="6">6 plate</option>
+											<option data-count="7">7 plate</option>
+											<option data-count="8">8 plate</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec bowl">
+						<label>Choose bowl</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select bowl</option>
+											<option data-count="1">1 bowl</option>
+											<option data-count="2">2 bowl</option>
+											<option data-count="3">3 bowl</option>
+											<option data-count="4">4 bowl</option>
+											<option data-count="5">5 bowl</option>
+											<option data-count="6">6 bowl</option>
+											<option data-count="7">7 bowl</option>
+											<option data-count="8">8 bowl</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec slice">
+						<label>Choose slice</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select slice</option>
+											<option data-count="1">1 slice</option>
+											<option data-count="2">2 slice</option>
+											<option data-count="3">3 slice</option>
+											<option data-count="4">4 slice</option>
+											<option data-count="5">5 slice</option>
+											<option data-count="6">6 slice</option>
+											<option data-count="7">7 slice</option>
+											<option data-count="8">8 slice</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec ml">
+						<label>Choose ml</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items/100ml</div>
+										<select>
+											<option>Select option/100ml</option>
+											<option data-count="1">1</option>
+											<option data-count="2">2</option>
+											<option data-count="3">3</option>
+											<option data-count="4">4</option>
+											<option data-count="5">5</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec katori">
+						<label>Choose katori</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select katori</option>
+											<option data-count="1">1 katori</option>
+											<option data-count="2">2 katori</option>
+											<option data-count="3">3 katori</option>
+											<option data-count="4">4 katori</option>
+											<option data-count="5">5 katori</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec glass">
+						<label>Choose glass</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select glass</option>
+											<option data-count="1">1 glass</option>
+											<option data-count="2">2 glass</option>
+											<option data-count="3">3 glass</option>
+											<option data-count="4">4 glass</option>
+											<option data-count="5">5 glass</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec slice150gm">
+						<label>Choose slice/(150gm)</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items/150gm</div>
+										<select>
+											<option>Select slice</option>
+											<option data-count="1">1 slice</option>
+											<option data-count="2">2 slice</option>
+											<option data-count="3">3 slice</option>
+											<option data-count="4">4 slice</option>
+											<option data-count="5">5 slice</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec piece125gms">
+						<label>Choose piece/125gms</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select piece</option>
+											<option data-count="1">1 piece</option>
+											<option data-count="2">2 piece</option>
+											<option data-count="3">3 piece</option>
+											<option data-count="4">4 piece</option>
+											<option data-count="5">5 piece</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec no150gms">
+						<label>Choose no/150gms</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select No.</option>
+											<option data-count="1">1</option>
+											<option data-count="2">2</option>
+											<option data-count="3">3</option>
+											<option data-count="4">4</option>
+											<option data-count="5">5</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec nomed">
+						<label>Choose no</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select No.</option>
+											<option data-count="1">1</option>
+											<option data-count="2">2</option>
+											<option data-count="3">3</option>
+											<option data-count="4">4</option>
+											<option data-count="5">5</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec nomedium">
+						<label>Choose no</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>ml</option>
+											<option data-count="1">1</option>
+											<option data-count="2">2</option>
+											<option data-count="3">3</option>
+											<option data-count="4">4</option>
+											<option data-count="5">5</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec gms">
+						<label>Choose item/100gms</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select option</option>
+											<option data-count="1">1</option>
+											<option data-count="2">2</option>
+											<option data-count="3">3</option>
+											<option data-count="4">4</option>
+											<option data-count="5">5</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+				<div class="genderRadioSec smallplate">
+						<label>Choose plate</label>
+						<div class="radioBox wid100 requiredField">
+							 <div class="selectBox">
+										<label>Food Items</label>
+										<div class="selectedValue">Food Items</div>
+										<select>
+											<option>Select Plate</option>
+											<option data-count="1">1</option>
+											<option data-count="2">2</option>
+											<option data-count="3">3</option>
+											<option data-count="4">4</option>
+											<option data-count="5">5</option>
+										</select>
+										<span class="error">This field is required.</span>
+							</div>
+						</div>
+				</div>
+		</div>
+	</li>
+</ul>
+<a href="javascript:;" class="btn gray fl addMoreBtn"><span></span>Add More</a>
+<a id="dinnerBtn" href="javascript:;" class="btn red fr">Next</a>
+</div>
+</div>
+<i class="clear"></i>
+</div>
+</div>
+
+<div id="processingResults" class="calcSteps columnMaster vCenter">
+<div class="column wid50 tCenter">
+<div class="imgBox">
+<img src="{{ directory }}/images/processing-result.png" alt="">
+</div>
+</div>
+<div class="column wid40">
+<h2 class="title">Processing Results</h2>
+<p>While we calculate your protien and nutrition intake, could you help us with your contact details so we could  serve you better in future?</p>
+<div class="mobEmailSec">
+					<div class="fieldBox requiredField wid100">
+						<div class="inputBox">
+							<input name="Mobile" id="mobile" data-label="true" type="text" maxlength="15" placeholder="Mobile" data-validation="required,numbersOnly,maxlength" />
+							<span class="error">This field is required.</span>
+						</div>
+					</div>
+					<div class="fieldBox requiredField wid100">
+						<div class="inputBox">
+							<input name="Email id" id="Email" data-label="true" type="text" placeholder="Email id" data-validation="required,email" />
+							<span class="error">This field is required.</span>
+						</div>
+						<span class="note infoSaveUs">Don't worry your information is safe with us.</span>
+					</div>
+					<i class="clear"></i>
+					<a id="procRsltsBtn" href="javascript:;" class="btn red fr">Show Report</a>
+				</div>          
+		</div>
+</div>
+
+<div id="score" class="calcSteps columnMaster vCenter tCenter">
+<h2 class="title tCenter">Your protein Score</h2>
+<div class="column wid50">
+<div class="recommendSec">
+	<div class="dailyRecPrtn">
+								<div class="gms">
+									 <h3>78</h3><span>gms</span>
+								</div>
+			<h4>Recommended <br> daily protin</h4>
+	</div>
+	
+	<div class="intakeProtein">
+			<p>Your current daily protein Intake in %</p>
+			<div class="PrtnDygram">
+					<img src="{{directory}}/images/score-persent.png" alt="">
+					<div class="score">
+												<div id="gauge3" class="gauge-container three"></div>
+							<h4>Your protein <br> Intake is</h4>
+							<h5>
+									<strong>75%</strong>
+									<span>(58.5 gms)</span>
+							</h5>
+							<h6 class="redText">25% Less</h6>
+					</div>
+					
+			</div>
+	</div>
+</div>
+</div>
+		<div class="column wid50">
+<div class="inadequateSec">
+<h4 class="subTitle">Your protein intake is inadequate</h4>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<footer id="footer">
+{% if page.footer %}
+<div class="ocean">
+<div class="wave"></div>
+<div class="wave"></div>
+</div>
+{{ page.footer }}
+{% endif %}
+</footer>
+<div class="searchLayer">
+<span class="close"></span>
+<div class="formBox">
+<form action="/search" method="post" id="askForm">
+<div class="fieldBox wid100 requiredField">
+<div class="inputBox">
+<input name="search" id="name" type="text" placeholder="What are you looking for?" />
+</div>
+</div>
+<button type="submit" class="searchBtn"></button>
+</form>
+</div>
+</div>
+<div class="lBoxMaster">
+<div class="overlay"></div>
+<div class="lBox">
+<span class="close">X</span>
+<div class="container">
+<div class="iframe">
+<h3 style="display:none;"></h3>
+<iframe width="100%" height="100%" src=""></iframe>
+</div>
+<div class="lContent"></div>
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,28 @@
+global-styling:
+  version: VERSION
+  css:
+    theme:
+      css/custom.css: {}
+      css/owl.carousel.css: {}
+      css/jquery-ui.css: {}
+      css/style.css: {}
+      css/media.css: {}
+      
+global-scripts:
+  version: VERSION
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+  js:
+      js/jquery.paginate.js: {}
+      js/jquery-ui.js: {}
+      js/owl.carousel.js: {}
+      js/snap.svg.js: {}
+      js/stacktable.js: {}
+      js/gauge.js: {}
+      js/common.js: {}
+      js/calculator.js: {}
+      js/custom.js: {}
+
+

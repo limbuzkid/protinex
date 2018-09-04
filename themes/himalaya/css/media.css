@@ -1,0 +1,2219 @@
+/* Classes */
+/*--------------*/
+/* line 26, D:/wamp/www/Protinex-main/scss/_base/_variables.scss */
+.gray {
+  background-color: #b7b7b7 !important;
+}
+
+/*--------------*/
+/* line 32, D:/wamp/www/Protinex-main/scss/_base/_variables.scss */
+.red {
+  background-color: #a3271b !important;
+}
+
+/* line 36, D:/wamp/www/Protinex-main/scss/_base/_variables.scss */
+.redText {
+  color: #a3271b !important;
+}
+
+/* line 41, D:/wamp/www/Protinex-main/scss/_base/_variables.scss */
+.redContent h2 {
+  color: #a3271b !important;
+}
+
+/* line 46, D:/wamp/www/Protinex-main/scss/_base/_variables.scss */
+.redContent ul li:before {
+  background: #a3271b !important;
+}
+
+/* line 51, D:/wamp/www/Protinex-main/scss/_base/_variables.scss */
+.redContent .btn {
+  background: #a3271b !important;
+}
+
+/*--------------*/
+/* line 58, D:/wamp/www/Protinex-main/scss/_base/_variables.scss */
+.blue {
+  background-color: #629fe7 !important;
+}
+
+/* line 62, D:/wamp/www/Protinex-main/scss/_base/_variables.scss */
+.blueText {
+  color: #629fe7 !important;
+}
+
+/* line 67, D:/wamp/www/Protinex-main/scss/_base/_variables.scss */
+.blueContent h2 {
+  color: #629fe7 !important;
+}
+
+/* line 72, D:/wamp/www/Protinex-main/scss/_base/_variables.scss */
+.blueContent ul li:before {
+  background: #629fe7 !important;
+}
+
+/* line 77, D:/wamp/www/Protinex-main/scss/_base/_variables.scss */
+.blueContent .btn {
+  background: #629fe7 !important;
+}
+
+/*--------------*/
+/* line 84, D:/wamp/www/Protinex-main/scss/_base/_variables.scss */
+.yellow {
+  background-color: #f0a33e !important;
+}
+
+/* line 88, D:/wamp/www/Protinex-main/scss/_base/_variables.scss */
+.yellowText {
+  color: #f0a33e !important;
+}
+
+/* line 93, D:/wamp/www/Protinex-main/scss/_base/_variables.scss */
+.yellowContent h2 {
+  color: #f0a33e !important;
+}
+
+/* line 98, D:/wamp/www/Protinex-main/scss/_base/_variables.scss */
+.yellowContent ul li:before {
+  background: #f0a33e !important;
+}
+
+/* line 103, D:/wamp/www/Protinex-main/scss/_base/_variables.scss */
+.yellowContent .btn {
+  background: #f0a33e !important;
+}
+
+/*--------------*/
+/* line 110, D:/wamp/www/Protinex-main/scss/_base/_variables.scss */
+.green {
+  background-color: #93c653 !important;
+}
+
+/* line 114, D:/wamp/www/Protinex-main/scss/_base/_variables.scss */
+.dark-greenText {
+  color: #6cab5d !important;
+}
+
+/* line 117, D:/wamp/www/Protinex-main/scss/_base/_variables.scss */
+.greenText {
+  color: #93c653 !important;
+}
+
+/* line 122, D:/wamp/www/Protinex-main/scss/_base/_variables.scss */
+.greenContent h2 {
+  color: #93c653 !important;
+}
+
+/* line 127, D:/wamp/www/Protinex-main/scss/_base/_variables.scss */
+.greenContent ul li:before {
+  background: #93c653 !important;
+}
+
+/* line 132, D:/wamp/www/Protinex-main/scss/_base/_variables.scss */
+.greenContent .btn {
+  background: #93c653 !important;
+}
+
+/*--------------*/
+/* line 139, D:/wamp/www/Protinex-main/scss/_base/_variables.scss */
+.purple {
+  background-color: #783381 !important;
+}
+
+/* line 143, D:/wamp/www/Protinex-main/scss/_base/_variables.scss */
+.purpleText {
+  color: #783381 !important;
+}
+
+/* line 148, D:/wamp/www/Protinex-main/scss/_base/_variables.scss */
+.purpleContent h2 {
+  color: #783381 !important;
+}
+
+/* line 153, D:/wamp/www/Protinex-main/scss/_base/_variables.scss */
+.purpleContent ul li:before {
+  background: #783381 !important;
+}
+
+/* line 158, D:/wamp/www/Protinex-main/scss/_base/_variables.scss */
+.purpleContent .btn {
+  background: #783381 !important;
+}
+
+/*--------------*/
+@media screen and (max-width: 1500px) {
+  /* line 8, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage .productCarousel .owl-nav .owl-prev {
+    left: 12px;
+  }
+  /* line 11, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage .productCarousel .owl-nav .owl-next {
+    right: 12px !important;
+    left: auto;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  /* line 20, D:/wamp/www/Protinex-main/scss/media.scss */
+  .tabSec .navTabs ul li {
+    padding-right: 5%;
+  }
+  /* line 23, D:/wamp/www/Protinex-main/scss/media.scss */
+  .proteinSourcesSec .sourceList ul li .content {
+    width: 90%;
+  }
+  /* line 26, D:/wamp/www/Protinex-main/scss/media.scss */
+  .thePowerOfProteinSec .whyImportentList ul li {
+    padding: 0 15px;
+  }
+  /* line 29, D:/wamp/www/Protinex-main/scss/media.scss */
+  .dailyRequirementTemplate .titleSec .container {
+    max-width: 80%;
+  }
+  /* line 32, D:/wamp/www/Protinex-main/scss/media.scss */
+  .sharePopup {
+    max-width: 85%;
+  }
+  /* line 35, D:/wamp/www/Protinex-main/scss/media.scss */
+  .calcTemplate .innerContainer {
+    max-width: 80%;
+  }
+  /* line 41, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage .productCarousel .owl-nav .owl-prev {
+    left: 5px;
+  }
+  /* line 44, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage .productCarousel .owl-nav .owl-next {
+    right: 5px !important;
+    left: auto;
+  }
+}
+
+@media screen and (max-width: 1254px) {
+  /* line 54, D:/wamp/www/Protinex-main/scss/media.scss */
+  header .hamburger, .logo {
+    display: block;
+    z-index: 1;
+  }
+  /* line 55, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mainNavs .searchBtn {
+    position: fixed;
+    right: 220px;
+    top: 8px;
+  }
+  /* line 61, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mainNavs {
+    left: -400px;
+    max-width: 400px;
+    width: 90%;
+    background: #fff;
+    height: calc(100vh - 85px);
+    top: 85px;
+    position: absolute;
+    bottom: auto;
+    overflow: hidden;
+    overflow-y: scroll;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+    border-right: 1px solid #ccc;
+  }
+  /* line 76, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mainNavs ul.mainNavigation {
+    width: 100%;
+  }
+  /* line 79, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mainNavs ul.mainNavigation li a {
+    font-family: "Rubik Medium";
+    position: relative;
+    padding: 10px 15px 10px;
+  }
+  /* line 84, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mainNavs ul.mainNavigation li a:after {
+    z-index: 1;
+    right: 20px;
+  }
+  /* line 91, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mainNavs ul.mainNavigation > li {
+    width: 100%;
+  }
+  /* line 94, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mainNavs ul.mainNavigation > li > a {
+    font-size: 2rem;
+    color: #629fe7;
+  }
+  /* line 99, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mainNavs ul.mainNavigation > li > .subNav {
+    padding-left: 20px;
+  }
+  /* line 103, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mainNavs ul.mainNavigation > li > .subNav li > .subNav {
+    padding-left: 30px;
+  }
+  /* line 107, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mainNavs ul.mainNavigation > li > .subNav li > a {
+    font-size: 1.8rem;
+  }
+  /* line 112, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mainNavs ul.mainNavigation > li > .subNav li li > a {
+    font-size: 1.6rem;
+    color: #666;
+  }
+  /* line 121, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mainNavs ul.mainNavigation ul {
+    /* display: block !important; */
+    position: relative;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    height: auto;
+    border: none;
+  }
+  /* line 128, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mainNavs ul.mainNavigation ul li {
+    border: none;
+  }
+  /* line 134, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mainNavs ul.mainNavigation .subNav, .mainNavs ul.mainNavigation .subNav li ul {
+    margin-left: 0;
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+  /* line 144, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mainNavs ul.mainNavigation.productList {
+    background: #f5f5f5;
+  }
+  /* line 145, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mainNavs ul.mainNavigation.productList .subNav {
+    display: block;
+  }
+  /* line 146, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mainNavs ul.mainNavigation.productList li a:after {
+    display: none;
+  }
+  /* line 147, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mainNavs ul.mainNavigation.productList .subNav {
+    border: none;
+  }
+  /* line 148, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mainNavs ul.mainNavigation.productList .subNav .productView {
+    display: none;
+  }
+  /* line 149, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mainNavs ul.mainNavigation.productList .subNav ul {
+    width: 100%;
+    float: left;
+  }
+  /* line 150, D:/wamp/www/Protinex-main/scss/media.scss */
+  .contactUsTemplate .letKnowSection #letUsKnow form {
+    width: 90%;
+  }
+  /* line 153, D:/wamp/www/Protinex-main/scss/media.scss */
+  .productDetailsTemplate .columnMaster .contentSec .btmCont .productHighlight ul li {
+    width: 48%;
+  }
+  /* line 154, D:/wamp/www/Protinex-main/scss/media.scss */
+  .tabSec .navTabs ul li {
+    padding-right: 0%;
+  }
+  /* line 157, D:/wamp/www/Protinex-main/scss/media.scss */
+  .nutritionalCom {
+    padding-left: 15%;
+  }
+  /* line 160, D:/wamp/www/Protinex-main/scss/media.scss */
+  .featuredRecipesBttm .btmCont .item .column.contentSec {
+    padding-left: 15px;
+  }
+  /* line 162, D:/wamp/www/Protinex-main/scss/media.scss */
+  .featuredRecipesBttm .btmCont .item .column.contentSec h4 {
+    font-size: 1.8rem;
+  }
+  /* line 166, D:/wamp/www/Protinex-main/scss/media.scss */
+  .tabSec .tabContent .col ul li {
+    padding-right: 3%;
+  }
+  /* line 168, D:/wamp/www/Protinex-main/scss/media.scss */
+  .sourcesOfProteinTemplate .whatIsProtein .knowAbout {
+    padding-left: 10%;
+  }
+  /* line 172, D:/wamp/www/Protinex-main/scss/media.scss */
+  .sourcesOfProteinTemplate .columnMaster .column:last-child {
+    padding-left: 60px;
+  }
+  /* line 175, D:/wamp/www/Protinex-main/scss/media.scss */
+  .sourcesOfProteinTemplate .whatIsProtein .totalBodySec .content {
+    width: 95%;
+  }
+  /* line 179, D:/wamp/www/Protinex-main/scss/media.scss */
+  .proteinSourcesSec .sourceList ul li h3 {
+    font-size: 3.8rem;
+  }
+  /* line 182, D:/wamp/www/Protinex-main/scss/media.scss */
+  .proteinSourcesSec .sourceList ul li .content {
+    width: 95%;
+  }
+  /* line 186, D:/wamp/www/Protinex-main/scss/media.scss */
+  .thePowerOfProteinSec .whyImportentList ul li {
+    width: 16.4%;
+    padding: 0 10px;
+  }
+  /* line 190, D:/wamp/www/Protinex-main/scss/media.scss */
+  .dailyRequirementTemplate .titleSec .container {
+    max-width: 90%;
+  }
+  /* line 193, D:/wamp/www/Protinex-main/scss/media.scss */
+  .thePowerOfProteinSec .whyImportentList ul li {
+    width: 24.5%;
+  }
+  /* line 196, D:/wamp/www/Protinex-main/scss/media.scss */
+  .deficiencyProteinTemplate .whyImportentList {
+    max-width: 100%;
+  }
+  /* line 200, D:/wamp/www/Protinex-main/scss/media.scss */
+  .calcTemplate .protine-calc .calcSteps .column:first-child {
+    padding-right: 30px;
+  }
+  /* line 206, D:/wamp/www/Protinex-main/scss/media.scss */
+  .calcSteps .column:last-child {
+    width: 50%;
+  }
+  /* line 211, D:/wamp/www/Protinex-main/scss/media.scss */
+  .calcTemplate #processingResults .mobEmailSec {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 217, D:/wamp/www/Protinex-main/scss/media.scss */
+  .btn {
+    padding: 7px 23px;
+  }
+  /* line 220, D:/wamp/www/Protinex-main/scss/media.scss */
+  header .hamburger {
+    display: block;
+  }
+  /* line 221, D:/wamp/www/Protinex-main/scss/media.scss */
+  .helpSection #askExpert, .helpSection #blog {
+    width: 100%;
+    padding: 0 0 50px 0;
+  }
+  /* line 222, D:/wamp/www/Protinex-main/scss/media.scss */
+  .recipes .imgBox img:nth-child(2) {
+    width: 80%;
+    left: 24%;
+    top: 4%;
+  }
+  /* line 223, D:/wamp/www/Protinex-main/scss/media.scss */
+  .share {
+    text-align: left !important;
+    width: 100% !important;
+    margin-bottom: 0 !important;
+  }
+  /* line 227, D:/wamp/www/Protinex-main/scss/media.scss */
+  .share a {
+    margin-top: 3px;
+    position: absolute;
+    left: 0;
+    margin-left: 0;
+    opacity: 0;
+    -webkit-transition: 0.5s ease all;
+    -moz-transition: 0.5s ease all;
+    -ms-transition: 0.5s ease all;
+    -o-transition: 0.5s ease all;
+    transition: 0.5s ease all;
+    z-index: -1;
+  }
+  /* line 236, D:/wamp/www/Protinex-main/scss/media.scss */
+  .share span {
+    font-size: 0;
+    width: 25px;
+    height: 28px;
+    background: url(../images/sprite.png) no-repeat -166px -53px;
+    display: inline-block;
+  }
+  /* line 244, D:/wamp/www/Protinex-main/scss/media.scss */
+  .share.iconsShow a {
+    opacity: 1;
+    z-index: 1;
+    left: 30px;
+  }
+  /* line 249, D:/wamp/www/Protinex-main/scss/media.scss */
+  .share.iconsShow .twitter {
+    left: 64px;
+  }
+  /* line 252, D:/wamp/www/Protinex-main/scss/media.scss */
+  .share.iconsShow .insta {
+    left: 98px;
+  }
+  /* line 259, D:/wamp/www/Protinex-main/scss/media.scss */
+  .chillWithSec .contentSec .topSec .titleSec {
+    width: 100%;
+  }
+  /* line 262, D:/wamp/www/Protinex-main/scss/media.scss */
+  .chillWithSec .contentSec .btmCont .needList {
+    margin-top: 10px;
+  }
+  /* line 265, D:/wamp/www/Protinex-main/scss/media.scss */
+  .chillWithSec .contentSec .btmCont .needList ul li {
+    width: 100%;
+  }
+  /* line 270, D:/wamp/www/Protinex-main/scss/media.scss */
+  .chillWithSec .contentSec .btmCont .procedure {
+    margin-top: 10px;
+  }
+  /* line 275, D:/wamp/www/Protinex-main/scss/media.scss */
+  .wordOfRecipesTemplate .didKnowCarousel {
+    width: 90%;
+  }
+  /* line 278, D:/wamp/www/Protinex-main/scss/media.scss */
+  .expertspeak .columnMaster .column {
+    width: 100%;
+  }
+  /* line 281, D:/wamp/www/Protinex-main/scss/media.scss */
+  section h1 {
+    font-size: 3.8rem;
+  }
+  /* line 283, D:/wamp/www/Protinex-main/scss/media.scss */
+  section h1 strong {
+    font-size: 6.0rem;
+  }
+  /* line 289, D:/wamp/www/Protinex-main/scss/media.scss */
+  .columnMaster .column:last-child {
+    padding-left: 25px;
+  }
+  /* line 294, D:/wamp/www/Protinex-main/scss/media.scss */
+  .contactUsTemplate .contectDetail .listing a, .contactUsTemplate .contectDetail .listing p {
+    font-size: 1.7rem;
+  }
+  /* line 295, D:/wamp/www/Protinex-main/scss/media.scss */
+  .stacktable.large-only {
+    display: none;
+  }
+  /* line 296, D:/wamp/www/Protinex-main/scss/media.scss */
+  .stacktable.small-only {
+    display: table;
+  }
+  /* line 298, D:/wamp/www/Protinex-main/scss/media.scss */
+  .nutritionInfoTable .stacktable.small-only {
+    box-shadow: none;
+    max-width: 500px;
+    margin: 20px auto 0;
+  }
+  /* line 304, D:/wamp/www/Protinex-main/scss/media.scss */
+  .nutritionInfoTable .stacktable.small-only tr:first-child th {
+    border-top: 0;
+    text-align: center;
+    color: #558c2b;
+    font-size: 1.6rem;
+    font-family: "Rubik Medium";
+  }
+  /* line 312, D:/wamp/www/Protinex-main/scss/media.scss */
+  .nutritionInfoTable .stacktable.small-only tr .st-head-row {
+    text-align: center;
+  }
+  /* line 316, D:/wamp/www/Protinex-main/scss/media.scss */
+  .nutritionInfoTable .stacktable.small-only th {
+    padding: 20px 5px 12px 15px;
+    background: none;
+  }
+  /* line 319, D:/wamp/www/Protinex-main/scss/media.scss */
+  .nutritionInfoTable .stacktable.small-only th h4 {
+    text-align: center;
+  }
+  /* line 322, D:/wamp/www/Protinex-main/scss/media.scss */
+  .nutritionInfoTable .stacktable.small-only th.st-head-row {
+    font-size: 1.4rem;
+    color: #000;
+    font-weight: bold;
+  }
+  /* line 328, D:/wamp/www/Protinex-main/scss/media.scss */
+  .nutritionInfoTable .stacktable.small-only td {
+    text-align: left;
+  }
+  /* line 333, D:/wamp/www/Protinex-main/scss/media.scss */
+  .productDetailsTemplate .columnMaster .contentSec .topSec .share {
+    position: inherit;
+  }
+  /* line 334, D:/wamp/www/Protinex-main/scss/media.scss */
+  .availFlavLeft {
+    padding: 0 10px;
+  }
+  /* line 337, D:/wamp/www/Protinex-main/scss/media.scss */
+  .productDetailsTemplate .columnMaster .column:last-child {
+    padding-left: 0;
+  }
+  /* line 338, D:/wamp/www/Protinex-main/scss/media.scss */
+  .productDetailsTemplate .columnMaster .contentSec .btmCont .productHighlight ul li {
+    padding-right: 5%;
+  }
+  /* line 340, D:/wamp/www/Protinex-main/scss/media.scss */
+  .nutritionalCom {
+    padding-left: 10%;
+    padding-top: 120px;
+  }
+  /* line 343, D:/wamp/www/Protinex-main/scss/media.scss */
+  .nutritionalCom h2 {
+    font-size: 3.0rem;
+  }
+  /* line 346, D:/wamp/www/Protinex-main/scss/media.scss */
+  .nutritionalCom .imgSec {
+    bottom: -64px;
+    right: -12px;
+  }
+  /* line 350, D:/wamp/www/Protinex-main/scss/media.scss */
+  .nutritionalCom p {
+    margin: 40px 0 45px;
+  }
+  /* line 356, D:/wamp/www/Protinex-main/scss/media.scss */
+  .tabSec .navTabs ul li a {
+    font-size: 1.8rem;
+    padding: 10px;
+  }
+  /* line 362, D:/wamp/www/Protinex-main/scss/media.scss */
+  .tabSec .tabContent .col ul li {
+    width: 49%;
+  }
+  /* line 363, D:/wamp/www/Protinex-main/scss/media.scss */
+  .sourcesOfProteinTemplate .whatIsProtein {
+    padding-top: 128px;
+  }
+  /* line 365, D:/wamp/www/Protinex-main/scss/media.scss */
+  .sourcesOfProteinTemplate .whatIsProtein .knowAbout {
+    padding-left: 2%;
+  }
+  /* line 369, D:/wamp/www/Protinex-main/scss/media.scss */
+  .sourcesOfProteinTemplate .whatIsProtein .knowAbout ul li p {
+    width: 210px;
+  }
+  /* line 376, D:/wamp/www/Protinex-main/scss/media.scss */
+  .sourcesOfProteinTemplate .columnMaster .column:last-child {
+    padding-left: 13%;
+  }
+  /* line 380, D:/wamp/www/Protinex-main/scss/media.scss */
+  .sourcesOfProteinTemplate .columnMaster .column:last-child ul li p {
+    width: 175px;
+  }
+  /* line 386, D:/wamp/www/Protinex-main/scss/media.scss */
+  .proteinSourcesSec .compoTitle h2 {
+    font-size: 6.0rem;
+  }
+  /* line 389, D:/wamp/www/Protinex-main/scss/media.scss */
+  .thePowerOfProteinSec .powerTitle, .thePowerOfProteinSec .subTitle {
+    max-width: 100%;
+  }
+  /* line 392, D:/wamp/www/Protinex-main/scss/media.scss */
+  .thePowerOfProteinSec .whyImportentList ul li {
+    width: 33.0%;
+    padding: 0 10px 35px;
+  }
+  /* line 396, D:/wamp/www/Protinex-main/scss/media.scss */
+  .proteinSourcesSec .sourceList ul li {
+    width: 49.8%;
+  }
+  /* line 399, D:/wamp/www/Protinex-main/scss/media.scss */
+  .sourcesOfProteinTemplate .whatIsProtein .totalBodySec .share {
+    text-align: center !important;
+    width: 25px !important;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+  /* line 404, D:/wamp/www/Protinex-main/scss/media.scss */
+  .sourcesOfProteinTemplate .whatIsProtein .totalBodySec .share a {
+    top: 0;
+  }
+  /* line 408, D:/wamp/www/Protinex-main/scss/media.scss */
+  .dailyRequirementTemplate .compoTitle h3 {
+    font-size: 3.0rem;
+    line-height: 35px;
+  }
+  /* line 412, D:/wamp/www/Protinex-main/scss/media.scss */
+  .dailyRequirementTemplate .titleSec h2 {
+    font-size: 4.0rem;
+  }
+  /* line 415, D:/wamp/www/Protinex-main/scss/media.scss */
+  .dailyRequirementTemplate .titleSec .container {
+    max-width: 98%;
+  }
+  /* line 418, D:/wamp/www/Protinex-main/scss/media.scss */
+  .thePowerOfProteinSec .powerTitle h2 {
+    font-size: 4.0rem;
+  }
+  /* line 421, D:/wamp/www/Protinex-main/scss/media.scss */
+  .thePowerOfProteinSec .subTitle h3 {
+    font-size: 3.0rem;
+  }
+  /* line 424, D:/wamp/www/Protinex-main/scss/media.scss */
+  .deficiencyProteinTemplate .whyImportentList ul li {
+    margin-bottom: 10px;
+  }
+  /* line 427, D:/wamp/www/Protinex-main/scss/media.scss */
+  .deficiencyProteinTemplate .whyImportentList .parasec {
+    width: 100%;
+  }
+  /* line 431, D:/wamp/www/Protinex-main/scss/media.scss */
+  .media-master .media-wrap li {
+    width: 33.33%;
+  }
+  /* line 434, D:/wamp/www/Protinex-main/scss/media.scss */
+  .media-master .media-wrap li h3 {
+    font-size: 1.6rem;
+  }
+  /* line 436, D:/wamp/www/Protinex-main/scss/media.scss */
+  .aboutprotin {
+    padding-bottom: 10px;
+  }
+  /* line 438, D:/wamp/www/Protinex-main/scss/media.scss */
+  .enough-protine ul {
+    padding-bottom: 20px;
+  }
+  /* line 439, D:/wamp/www/Protinex-main/scss/media.scss */
+  .enough-protine p {
+    font-size: 1.8rem;
+  }
+  /* line 441, D:/wamp/www/Protinex-main/scss/media.scss */
+  .sharePopup {
+    max-width: 90%;
+    padding: 30px 20px 10px;
+  }
+  /* line 446, D:/wamp/www/Protinex-main/scss/media.scss */
+  .calcTemplate .protine-calc .calcSteps .column:first-child {
+    padding-right: 0;
+  }
+  /* line 451, D:/wamp/www/Protinex-main/scss/media.scss */
+  #letsGet .fieldBox {
+    width: 100%;
+  }
+  /* line 455, D:/wamp/www/Protinex-main/scss/media.scss */
+  .calcTemplate .foodItemsSec ul.lists > li {
+    padding: 0 30px 20px 30px;
+  }
+  /* line 458, D:/wamp/www/Protinex-main/scss/media.scss */
+  .calcTemplate .innerContainer {
+    max-width: 100%;
+  }
+  /* line 461, D:/wamp/www/Protinex-main/scss/media.scss */
+  .calcTemplate .foodItemsSec ul.lists > li .removeLi {
+    right: 12px;
+    top: 12px;
+  }
+  /* line 465, D:/wamp/www/Protinex-main/scss/media.scss */
+  .calcTemplate #processingResults .mobEmailSec {
+    width: 100%;
+  }
+  /* line 468, D:/wamp/www/Protinex-main/scss/media.scss */
+  section h2 strong {
+    font-size: 5.8rem;
+    margin-top: -6px;
+  }
+  /* line 472, D:/wamp/www/Protinex-main/scss/media.scss */
+  .helpSection #askExpert {
+    width: 80%;
+    margin: 0 auto;
+    float: none;
+    clear: both;
+  }
+  /* line 158, D:/wamp/www/Protinex-main/scss/_base/_mixins.scss */
+  .helpSection #askExpert:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  /* line 480, D:/wamp/www/Protinex-main/scss/media.scss */
+  .owl3D .owl-dots {
+    display: block !important;
+  }
+  /* line 483, D:/wamp/www/Protinex-main/scss/media.scss */
+  .owl3D .owl-dots .owl-dot span {
+    width: 8px;
+    height: 8px;
+  }
+  /* line 490, D:/wamp/www/Protinex-main/scss/media.scss */
+  .owl3D .owl-nav {
+    display: none !important;
+  }
+  /* line 494, D:/wamp/www/Protinex-main/scss/media.scss */
+  .ourProducts:after {
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -ms-background-size: contain;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+  }
+  /* line 499, D:/wamp/www/Protinex-main/scss/media.scss */
+  .ourProducts .owl3D:after {
+    width: 500px;
+    height: 500px;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -ms-background-size: contain;
+    background-size: contain;
+    left: -20%;
+  }
+  /* line 506, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.calculator:after {
+    bottom: -13%;
+  }
+  /* line 512, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.calculator .columnMaster .column:first-child .imgBox {
+    margin-left: -50px;
+  }
+  /* line 519, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.helpSection:after {
+    top: 40%;
+  }
+  /* line 525, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.myths .column:first-child .imgBox.svgBox {
+    margin-right: -60%;
+  }
+  /* line 529, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.myths .column:last-child {
+    padding-left: 0;
+  }
+  /* line 537, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.recipes .column:last-child .imgBox.svgBox {
+    margin-right: -30%;
+  }
+  /* line 541, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.recipes .column:last-child {
+    padding-left: 0;
+  }
+  /* line 547, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage #slider {
+    display: block !important;
+  }
+  /* line 552, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage .productCarousel .owl-controls .owl-dots {
+    display: none !important;
+  }
+  /* line 558, D:/wamp/www/Protinex-main/scss/media.scss */
+  .bannerSection .bannerWave {
+    height: 92px !important;
+  }
+  /* line 561, D:/wamp/www/protinex/protinex-main/scss/media.scss */
+  .videoWrap, .videodesc {
+    width: 80%;
+    left: 10%;
+  }
+  /* line 564, D:/wamp/www/protinex/protinex-main/scss/media.scss */
+  .videoWrap iframe, .videodesc iframe {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 567, D:/wamp/www/Protinex-main/scss/media.scss */
+  .container.full {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  /* line 572, D:/wamp/www/Protinex-main/scss/media.scss */
+  .leftBg, .rightBg {
+    background: none;
+  }
+  /* line 576, D:/wamp/www/Protinex-main/scss/media.scss */
+  section {
+    padding-bottom: 30px;
+  }
+  /* line 579, D:/wamp/www/Protinex-main/scss/media.scss */
+  section h2 {
+    font-size: 2.8rem;
+  }
+  /* line 581, D:/wamp/www/Protinex-main/scss/media.scss */
+  section h2 strong {
+    font-size: 3.0rem;
+    padding-top: 10px;
+  }
+  /* line 588, D:/wamp/www/Protinex-main/scss/media.scss */
+  .helpSection #askExpert h2:before {
+    top: -20px;
+  }
+  /* line 590, D:/wamp/www/Protinex-main/scss/media.scss */
+  .ourProducts:after {
+    display: none;
+  }
+  /* line 595, D:/wamp/www/Protinex-main/scss/media.scss */
+  .yumRecipes .testimonialData h2 {
+    font-size: 3rem;
+  }
+  /* line 597, D:/wamp/www/Protinex-main/scss/media.scss */
+  .yumRecipes .testimonialData h2:before {
+    bottom: 6px;
+  }
+  /* line 600, D:/wamp/www/Protinex-main/scss/media.scss */
+  .yumRecipes .testimonialData h2 strong {
+    font-size: 5.0rem;
+    padding-top: 10px;
+    line-height: 0.8;
+  }
+  /* line 607, D:/wamp/www/Protinex-main/scss/media.scss */
+  .yumRecipes .btn {
+    font-size: 1.5rem;
+  }
+  /* line 612, D:/wamp/www/Protinex-main/scss/media.scss */
+  .wordOfRecipesTemplate .chillWithSec .contentSec .topSec .titleSec h2 strong {
+    font-size: 5rem;
+  }
+  /* line 616, D:/wamp/www/Protinex-main/scss/media.scss */
+  .contentSec .btmCont h4 {
+    font-size: 2.0rem !important;
+    line-height: 25px !important;
+  }
+  /* line 621, D:/wamp/www/Protinex-main/scss/media.scss */
+  .expertspeak h2 strong {
+    font-size: 5rem;
+  }
+  /* line 625, D:/wamp/www/Protinex-main/scss/media.scss */
+  .wordOfRecipesTemplate .chillWithSec .contentSec .btmCont ul li {
+    font-size: 1.6rem;
+  }
+  /* line 628, D:/wamp/www/Protinex-main/scss/media.scss */
+  .columnMaster .column {
+    width: 100%;
+  }
+  /* line 630, D:/wamp/www/Protinex-main/scss/media.scss */
+  .columnMaster .column:last-child {
+    padding-left: 0;
+  }
+  /* line 634, D:/wamp/www/Protinex-main/scss/media.scss */
+  .contactUsTemplate .letKnowSection #letUsKnow form {
+    width: 100%;
+  }
+  /* line 639, D:/wamp/www/Protinex-main/scss/media.scss */
+  .letKnowSection .columnMaster .column:last-child {
+    margin-top: 30px;
+  }
+  /* line 646, D:/wamp/www/Protinex-main/scss/media.scss */
+  .fieldBox[class*="wid"] {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* line 652, D:/wamp/www/Protinex-main/scss/media.scss */
+  .lBox .close {
+    right: -10px;
+    top: -41px;
+    z-index: 1;
+  }
+  /* line 658, D:/wamp/www/Protinex-main/scss/media.scss */
+  .productDetailsTemplate .columnMaster .contentSec .btmCont .availFlavCarousel {
+    width: 100%;
+  }
+  /* line 660, D:/wamp/www/Protinex-main/scss/media.scss */
+  .productDetailsTemplate .columnMaster .contentSec .btmCont .availFlavCarousel .item h4 {
+    font-size: 1.3rem !important;
+    line-height: 15px !important;
+  }
+  /* line 666, D:/wamp/www/Protinex-main/scss/media.scss */
+  .productDetailsTemplate .columnMaster .contentSec .btmCont .ourBrandCarousel {
+    width: 100%;
+  }
+  /* line 667, D:/wamp/www/Protinex-main/scss/media.scss */
+  .nutritionalCom {
+    padding-left: 0;
+    padding-top: 50px;
+  }
+  /* line 670, D:/wamp/www/Protinex-main/scss/media.scss */
+  .nutritionalCom .imgSec {
+    bottom: -110px;
+    right: 0;
+  }
+  /* line 675, D:/wamp/www/Protinex-main/scss/media.scss */
+  .featuredRecipesBttm .btmCont .item .column.contentSec h4 {
+    line-height: 20px;
+    font-size: 1.6rem;
+  }
+  /* line 679, D:/wamp/www/Protinex-main/scss/media.scss */
+  .tabSec .navTabs {
+    display: none;
+  }
+  /* line 683, D:/wamp/www/Protinex-main/scss/media.scss */
+  .tabSec .tabContent .accTitle {
+    color: #fff;
+    background: #f0a33e;
+    font-family: "Rubik Medium";
+    font-size: 2.2rem;
+    padding: 9px 5px 8px 15px;
+    margin-top: 20px;
+    position: relative;
+  }
+  /* line 691, D:/wamp/www/Protinex-main/scss/media.scss */
+  .tabSec .tabContent .accTitle:after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-right: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    display: inline-block;
+    position: relative;
+    margin-top: 1px;
+    -webkit-transform: rotate(133deg);
+    -moz-transform: rotate(133deg);
+    -ms-transform: rotate(133deg);
+    -o-transform: rotate(133deg);
+    transform: rotate(133deg);
+    margin-left: 10px;
+    vertical-align: top;
+    position: absolute;
+    right: 15px;
+  }
+  /* line 707, D:/wamp/www/Protinex-main/scss/media.scss */
+  .tabSec .tabContent .accTitle.open:after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    right: 15px;
+    margin-top: 8px;
+  }
+  /* line 715, D:/wamp/www/Protinex-main/scss/media.scss */
+  .breadcrumbs {
+    z-index: -9;
+    opacity: 0;
+  }
+  /* line 719, D:/wamp/www/Protinex-main/scss/media.scss */
+  .buyBtnOnBanner {
+    position: inherit;
+    width: 100%;
+    text-align: right;
+  }
+  /* line 723, D:/wamp/www/Protinex-main/scss/media.scss */
+  .buyBtnOnBanner:bedore {
+    display: none;
+  }
+  /* line 726, D:/wamp/www/Protinex-main/scss/media.scss */
+  .buyBtnOnBanner .btn {
+    margin-left: 10px;
+  }
+  /* line 730, D:/wamp/www/Protinex-main/scss/media.scss */
+  .tabSec .tabContent .col .accTitle {
+    display: block;
+  }
+  /* line 733, D:/wamp/www/Protinex-main/scss/media.scss */
+  .sourcesOfProteinTemplate .whatIsProtein {
+    padding-top: 0;
+  }
+  /* line 736, D:/wamp/www/Protinex-main/scss/media.scss */
+  .sourcesOfProteinTemplate .whatIsProtein .totalBodySec .imgSec {
+    display: none;
+  }
+  /* line 740, D:/wamp/www/Protinex-main/scss/media.scss */
+  .sourcesOfProteinTemplate .whatIsProtein .knowAbout ul li {
+    margin-top: 15px;
+  }
+  /* line 742, D:/wamp/www/Protinex-main/scss/media.scss */
+  .sourcesOfProteinTemplate .whatIsProtein .knowAbout ul li p {
+    width: 75%;
+  }
+  /* line 747, D:/wamp/www/Protinex-main/scss/media.scss */
+  .sourcesOfProteinTemplate .columnMaster .column:last-child {
+    padding-left: 0;
+    margin-top: 50px;
+  }
+  /* line 750, D:/wamp/www/Protinex-main/scss/media.scss */
+  .sourcesOfProteinTemplate .columnMaster .column:last-child ul li p {
+    width: 75%;
+  }
+  /* line 754, D:/wamp/www/Protinex-main/scss/media.scss */
+  .proteinSourcesSec .sourceList {
+    text-align: center;
+  }
+  /* line 756, D:/wamp/www/Protinex-main/scss/media.scss */
+  .proteinSourcesSec .sourceList ul li {
+    width: 49.6%;
+    margin-bottom: 40px;
+  }
+  /* line 759, D:/wamp/www/Protinex-main/scss/media.scss */
+  .proteinSourcesSec .sourceList ul li h3 {
+    font-size: 3.0rem;
+    line-height: 31px;
+  }
+  /* line 765, D:/wamp/www/Protinex-main/scss/media.scss */
+  .thePowerOfProteinSec .powerTitle {
+    margin-top: 50px;
+  }
+  /* line 767, D:/wamp/www/Protinex-main/scss/media.scss */
+  .thePowerOfProteinSec .powerTitle h2 {
+    font-size: 4.0rem;
+  }
+  /* line 771, D:/wamp/www/Protinex-main/scss/media.scss */
+  .thePowerOfProteinSec .subTitle h3 {
+    font-size: 3.5rem;
+  }
+  /* line 774, D:/wamp/www/Protinex-main/scss/media.scss */
+  .sourcesOfProteinTemplate .whatIsProtein .totalBodySec .content {
+    width: 100%;
+  }
+  /* line 777, D:/wamp/www/Protinex-main/scss/media.scss */
+  .dailyRequirementTemplate .compoTitle {
+    margin-top: 0;
+  }
+  /* line 781, D:/wamp/www/Protinex-main/scss/media.scss */
+  .media-master .media-wrap li {
+    width: 50%;
+  }
+  /* line 786, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mythfact-content {
+    padding: 20px 0;
+  }
+  /* line 787, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mythfact-content .myth-img {
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  /* line 790, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mythfact-content .myth-text {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  /* line 792, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mythfact-content .myth-text h3 {
+    font-size: 2.1rem;
+  }
+  /* line 793, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mythfact-content .myth-text h4 {
+    font-size: 1.9rem;
+  }
+  /* line 794, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mythfact-content .myth-text p {
+    font-size: 1.4rem;
+  }
+  /* line 798, D:/wamp/www/Protinex-main/scss/media.scss */
+  #letsStart h1 {
+    margin-bottom: 20px;
+    font-size: 5rem;
+  }
+  /* line 802, D:/wamp/www/Protinex-main/scss/media.scss */
+  #letsStart .column {
+    text-align: center;
+  }
+  /* line 805, D:/wamp/www/Protinex-main/scss/media.scss */
+  #letsStart .btn {
+    display: inline-block;
+    float: none;
+  }
+  /* line 811, D:/wamp/www/Protinex-main/scss/media.scss */
+  #letsGet .column:last-child {
+    width: 100%;
+  }
+  /* line 814, D:/wamp/www/Protinex-main/scss/media.scss */
+  #letsGet .imgBox {
+    display: none;
+  }
+  /* line 817, D:/wamp/www/Protinex-main/scss/media.scss */
+  #letsGet .fieldBox {
+    padding: 10px 10px 20px 10px;
+  }
+  /* line 821, D:/wamp/www/Protinex-main/scss/media.scss */
+  #letsGet .measurementSec .fieldBox {
+    width: 50%;
+  }
+  /* line 826, D:/wamp/www/Protinex-main/scss/media.scss */
+  .protineCalc .title {
+    text-align: center;
+  }
+  /* line 829, D:/wamp/www/Protinex-main/scss/media.scss */
+  .protineCalc .title {
+    font-size: 2.8rem;
+  }
+  /* line 833, D:/wamp/www/Protinex-main/scss/media.scss */
+  #breakfast .column:last-child {
+    width: 100%;
+  }
+  /* line 836, D:/wamp/www/Protinex-main/scss/media.scss */
+  #breakfast .imgBox {
+    display: none;
+  }
+  /* line 839, D:/wamp/www/Protinex-main/scss/media.scss */
+  #breakfast p, #breakfast .userNameSec {
+    text-align: center;
+  }
+  /* line 844, D:/wamp/www/Protinex-main/scss/media.scss */
+  #lunch .column:last-child {
+    width: 100%;
+  }
+  /* line 847, D:/wamp/www/Protinex-main/scss/media.scss */
+  #lunch .imgBox {
+    display: none;
+  }
+  /* line 850, D:/wamp/www/Protinex-main/scss/media.scss */
+  #lunch p, #lunch .userNameSec {
+    text-align: center;
+  }
+  /* line 855, D:/wamp/www/Protinex-main/scss/media.scss */
+  #Snacks .column:last-child {
+    width: 100%;
+  }
+  /* line 858, D:/wamp/www/Protinex-main/scss/media.scss */
+  #Snacks .imgBox {
+    display: none;
+  }
+  /* line 861, D:/wamp/www/Protinex-main/scss/media.scss */
+  #Snacks p, #Snacks .userNameSec {
+    text-align: center;
+  }
+  /* line 866, D:/wamp/www/Protinex-main/scss/media.scss */
+  #Dinner .column:last-child {
+    width: 100%;
+  }
+  /* line 869, D:/wamp/www/Protinex-main/scss/media.scss */
+  #Dinner .imgBox {
+    display: none;
+  }
+  /* line 872, D:/wamp/www/Protinex-main/scss/media.scss */
+  #Dinner p, #Dinner .userNameSec {
+    text-align: center;
+  }
+  /* line 877, D:/wamp/www/Protinex-main/scss/media.scss */
+  #processingResults .column:last-child {
+    width: 100%;
+  }
+  /* line 880, D:/wamp/www/Protinex-main/scss/media.scss */
+  #processingResults .imgBox {
+    display: none;
+  }
+  /* line 883, D:/wamp/www/Protinex-main/scss/media.scss */
+  #processingResults p, #processingResults .userNameSec {
+    text-align: center;
+  }
+  /* line 887, D:/wamp/www/Protinex-main/scss/media.scss */
+  .calcSteps .column:last-child {
+    width: 100%;
+  }
+  /* line 890, D:/wamp/www/Protinex-main/scss/media.scss */
+  .calcTemplate #score .inadequateSec {
+    margin: 50px auto 0;
+  }
+  /* line 895, D:/wamp/www/Protinex-main/scss/media.scss */
+  .calcTemplate #score .recommendSec .dailyRecPrtn h4 {
+    font-size: 2.2rem;
+  }
+  /* line 899, D:/wamp/www/Protinex-main/scss/media.scss */
+  .calcTemplate #score .recommendSec .dailyRecPrtn .gms h3 {
+    font-size: 3.5rem;
+    line-height: 28px;
+  }
+  /* line 908, D:/wamp/www/Protinex-main/scss/media.scss */
+  .knowProtien .box img {
+    width: 50%;
+  }
+  /* line 911, D:/wamp/www/Protinex-main/scss/media.scss */
+  .knowProtien .box p {
+    width: 45%;
+    padding: 5px 0 20px;
+    float: left;
+  }
+  /* line 920, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.calculator .columnMaster .column {
+    width: 50%;
+  }
+  /* line 923, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.calculator .columnMaster .column:first-child .imgBox {
+    margin-left: -50%;
+  }
+  /* line 925, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.calculator .columnMaster .column:first-child .imgBox img {
+    width: auto;
+    max-width: none;
+  }
+  /* line 931, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.calculator .columnMaster .column:last-child {
+    margin-left: 0;
+  }
+  /* line 938, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.myths .vCenter.fRight .column:nth-child(1) {
+    left: 50%;
+  }
+  /* line 940, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.myths .vCenter.fRight .column:nth-child(1) .imgBox.svgBox {
+    margin: 0;
+  }
+  /* line 944, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.myths .vCenter.fRight .column:nth-child(2) {
+    right: 50%;
+    left: auto;
+  }
+  /* line 948, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.myths .column {
+    width: 50% !important;
+  }
+  /* line 950, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.myths .column .imgBox.svgBox {
+    margin-right: 0;
+    left: 30%;
+  }
+  /* line 954, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.myths .column .btn {
+    white-space: nowrap;
+  }
+  /* line 961, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.recipes .vCenter.fRight .column:nth-child(1) {
+    left: 50%;
+  }
+  /* line 963, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.recipes .vCenter.fRight .column:nth-child(1) .imgBox.svgBox {
+    margin: 0;
+  }
+  /* line 967, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.recipes .vCenter.fRight .column:nth-child(2) {
+    right: 50%;
+    left: auto;
+  }
+  /* line 971, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.recipes .column {
+    width: 50% !important;
+  }
+  /* line 973, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.recipes .column .imgBox.svgBox {
+    margin-right: 0 !important;
+    left: 20%;
+  }
+  /* line 977, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.recipes .column .btn {
+    white-space: nowrap;
+  }
+  /* line 982, D:/wamp/www/Protinex-main/scss/media.scss */
+  .helpSection #blog .blogBox .post p {
+    font-size: 1.6rem;
+  }
+  /* line 986, D:/wamp/www/Protinex-main/scss/media.scss */
+  .wordOfRecipesTemplate .imgBox.svgBox {
+    float: none;
+    margin-bottom: 30px;
+  }
+  /* line 991, D:/wamp/www/Protinex-main/scss/media.scss */
+  .wordOfRecipesTemplate .pageTitle, .recipesTemplate .pageTitle {
+    padding-bottom: 20px;
+  }
+  /* line 994, D:/wamp/www/Protinex-main/scss/media.scss */
+  .availFlavLeft {
+    margin-top: 0;
+  }
+  /* line 998, D:/wamp/www/Protinex-main/scss/media.scss */
+  header .logo {
+    width: 150px;
+  }
+  /* line 1000, D:/wamp/www/Protinex-main/scss/media.scss */
+  header .logo img {
+    width: 100%;
+  }
+  /* line 1004, D:/wamp/www/Protinex-main/scss/media.scss */
+  header .mainNavs .searchBtn {
+    top: 0px;
+    right: 175px;
+  }
+  /* line 1008, D:/wamp/www/Protinex-main/scss/media.scss */
+  header .container {
+    padding: 5px 10px;
+  }
+  /* line 1012, D:/wamp/www/Protinex-main/scss/media.scss */
+  .breadcrumbs {
+    margin-bottom: -60px;
+  }
+  /* line 1015, D:/wamp/www/Protinex-main/scss/media.scss */
+  .sharePopup {
+    min-height: 345px;
+  }
+  /* line 1018, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mainNavs {
+    top: 68px;
+  }
+  /* line 1021, D:/wamp/www/Protinex-main/scss/media.scss */
+  .twoColumn .columnMaster .blogContent {
+    margin-top: 30px;
+  }
+  /* line 1024, D:/wamp/www/Protinex-main/scss/media.scss */
+  .breadcrumbs ul li {
+    font-size: 0;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  /* line 1033, D:/wamp/www/Protinex-main/scss/media.scss */
+  .myths .column.wid50 .imgBox {
+    left: 40%;
+    z-index: -1;
+  }
+  /* line 1037, D:/wamp/www/Protinex-main/scss/media.scss */
+  .myths .column.wid50:first-child {
+    width: 70%;
+    margin-right: -20%;
+  }
+  /* line 1046, D:/wamp/www/Protinex-main/scss/media.scss */
+  .calculator .column.wid50 .imgBox {
+    left: -40%;
+    z-index: -1;
+  }
+  /* line 1050, D:/wamp/www/Protinex-main/scss/media.scss */
+  .calculator .column.wid50:last-child {
+    width: 70%;
+    margin-left: -20%;
+  }
+  /* line 1058, D:/wamp/www/Protinex-main/scss/media.scss */
+  .vCenter.fRight .column:nth-child(1) {
+    left: 0;
+    right: 0px;
+    margin: 0 auto;
+  }
+  /* line 1062, D:/wamp/www/Protinex-main/scss/media.scss */
+  .vCenter.fRight .column:nth-child(2) {
+    left: 0;
+    right: 0px;
+  }
+  /* line 1066, D:/wamp/www/Protinex-main/scss/media.scss */
+  .dailyReqFor .tabLinkSec ul li {
+    margin: 0 30px;
+  }
+  /* line 1069, D:/wamp/www/Protinex-main/scss/media.scss */
+  .dailyReqFor .tab-contents .content ul li {
+    margin: 0 10px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  /* line 1078, D:/wamp/www/Protinex-main/scss/media.scss */
+  .chillWithSec .column:first-child {
+    width: 100%;
+    padding-left: 0 !important;
+  }
+  /* line 1083, D:/wamp/www/Protinex-main/scss/media.scss */
+  .chillWithSec .contentSec {
+    padding: 20px 0 0;
+    width: 100%;
+    padding-left: 0 !important;
+  }
+  /* line 1089, D:/wamp/www/Protinex-main/scss/media.scss */
+  footer .container {
+    min-height: 230px;
+  }
+  /* line 1092, D:/wamp/www/Protinex-main/scss/media.scss */
+  footer .container .links li {
+    padding: 10px;
+  }
+  /* line 1096, D:/wamp/www/Protinex-main/scss/media.scss */
+  footer .container .sublink {
+    text-align: center;
+    position: inherit;
+  }
+  /* line 1099, D:/wamp/www/Protinex-main/scss/media.scss */
+  footer .container .sublink li {
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+  }
+  /* line 1103, D:/wamp/www/Protinex-main/scss/media.scss */
+  footer .container .sublink li a {
+    color: #f4837c;
+  }
+  /* line 1106, D:/wamp/www/Protinex-main/scss/media.scss */
+  footer .container .sublink li:before {
+    background: #f4837c;
+  }
+  /* line 1111, D:/wamp/www/Protinex-main/scss/media.scss */
+  footer .container .socialLinks {
+    top: 75px;
+    bottom: auto;
+    width: 100%;
+    text-align: center;
+  }
+  /* line 1116, D:/wamp/www/Protinex-main/scss/media.scss */
+  footer .container .socialLinks li {
+    margin: 2px 8px;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+  }
+  /* line 1124, D:/wamp/www/Protinex-main/scss/media.scss */
+  .wordOfRecipesTemplate .chillWithSec .contentSec .topSec .titleSec h2 strong {
+    font-size: 4rem;
+  }
+  /* line 1127, D:/wamp/www/Protinex-main/scss/media.scss */
+  .chilWithRecipesSec {
+    margin-bottom: 80px;
+  }
+  /* line 1130, D:/wamp/www/Protinex-main/scss/media.scss */
+  section h1 {
+    font-size: 2.8rem;
+  }
+  /* line 1132, D:/wamp/www/Protinex-main/scss/media.scss */
+  section h1 strong {
+    font-size: 4rem;
+  }
+  /* line 1136, D:/wamp/www/Protinex-main/scss/media.scss */
+  .commonListSection .contentSec .btmCont ul li {
+    width: 100%;
+  }
+  /* line 1139, D:/wamp/www/Protinex-main/scss/media.scss */
+  .wordOfRecipesTemplate .whatIsProtein h3 {
+    font-size: 1.8rem;
+    line-height: 22px;
+  }
+  /* line 1143, D:/wamp/www/Protinex-main/scss/media.scss */
+  .wordOfRecipesTemplate .columnMaster .btmCont ul li {
+    line-height: 20px;
+    font-size: 1.6rem;
+  }
+  /* line 1147, D:/wamp/www/Protinex-main/scss/media.scss */
+  .contactUsTemplate .contectDetail .listing a, .contactUsTemplate .contectDetail .listing p {
+    font-size: 1.5rem;
+    line-height: 25px;
+  }
+  /* line 1151, D:/wamp/www/Protinex-main/scss/media.scss */
+  .contactUsTemplate .contectDetail .listing {
+    padding-left: 45px;
+  }
+  /* line 1153, D:/wamp/www/Protinex-main/scss/media.scss */
+  .contactUsTemplate .contectDetail .listing h5 {
+    font-size: 1.5rem;
+  }
+  /* line 1157, D:/wamp/www/Protinex-main/scss/media.scss */
+  .tabSec .navTabs ul li a {
+    font-size: 1.6rem;
+    padding: 14px;
+  }
+  /* line 1161, D:/wamp/www/Protinex-main/scss/media.scss */
+  .featuredRecipesBttm .btmCont .item .column.contentSec h4 {
+    margin-bottom: 5px;
+    line-height: 18px;
+    font-size: 1.5rem;
+  }
+  /* line 1162, D:/wamp/www/Protinex-main/scss/media.scss */
+  .proteinSourcesSec .compoTitle h2 {
+    font-size: 4rem;
+  }
+  /* line 1165, D:/wamp/www/Protinex-main/scss/media.scss */
+  .proteinSourcesSec .sourceList ul li {
+    width: 100%;
+  }
+  /* line 1167, D:/wamp/www/Protinex-main/scss/media.scss */
+  .proteinSourcesSec .sourceList ul li h3 {
+    margin-top: 10px;
+  }
+  /* line 1171, D:/wamp/www/Protinex-main/scss/media.scss */
+  .thePowerOfProteinSec .whyImportentList ul li {
+    width: 49.5%;
+  }
+  /* line 1174, D:/wamp/www/Protinex-main/scss/media.scss */
+  .thePowerOfProteinSec .powerTitle h2 {
+    font-size: 3.0rem;
+  }
+  /* line 1177, D:/wamp/www/Protinex-main/scss/media.scss */
+  .thePowerOfProteinSec .subTitle h3 {
+    font-size: 2.5rem;
+  }
+  /* line 1180, D:/wamp/www/Protinex-main/scss/media.scss */
+  .dailyRequirementTemplate .titleSec h2 {
+    font-size: 3.0rem;
+  }
+  /* line 1183, D:/wamp/www/Protinex-main/scss/media.scss */
+  .dailyRequirementTemplate .compoTitle h3 {
+    font-size: 2.5rem;
+    line-height: 30px;
+  }
+  /* line 1187, D:/wamp/www/Protinex-main/scss/media.scss */
+  .proteinSourcesSec .sourceList ul li {
+    margin-bottom: 20px;
+  }
+  /* line 1190, D:/wamp/www/Protinex-main/scss/media.scss */
+  .deficiencyProteinTemplate .whyImportentList .parasec .btn {
+    font-size: 1.8rem;
+  }
+  /* line 1193, D:/wamp/www/Protinex-main/scss/media.scss */
+  .deficiencyProteinTemplate .whyImportentList .parasec p {
+    font-size: 1.6rem;
+    line-height: 2.0rem;
+  }
+  /* line 1197, D:/wamp/www/Protinex-main/scss/media.scss */
+  .protineCalc {
+    padding-top: 10px;
+  }
+  /* line 1200, D:/wamp/www/Protinex-main/scss/media.scss */
+  #letsStart h1 {
+    font-size: 3.5rem;
+  }
+  /* line 1203, D:/wamp/www/Protinex-main/scss/media.scss */
+  #letsStart .subHead {
+    padding-top: 15px;
+    line-height: 1.0;
+    font-size: 2.5rem;
+  }
+  /* line 1207, D:/wamp/www/Protinex-main/scss/media.scss */
+  #letsStart .subHead strong {
+    font-size: 3.5rem;
+  }
+  /* line 1211, D:/wamp/www/Protinex-main/scss/media.scss */
+  .genderRadioSec .toolSec {
+    width: 90%;
+  }
+  /* line 1214, D:/wamp/www/Protinex-main/scss/media.scss */
+  .error-Pagetemplate .error-page .errorTxt p {
+    font-size: 2.2rem;
+  }
+  /* line 1218, D:/wamp/www/Protinex-main/scss/media.scss */
+  .knowProtien .box {
+    text-align: center;
+  }
+  /* line 1220, D:/wamp/www/Protinex-main/scss/media.scss */
+  .knowProtien .box p {
+    text-align: left;
+    padding: 0px 0 20px;
+    width: 55%;
+  }
+  /* line 1225, D:/wamp/www/Protinex-main/scss/media.scss */
+  .knowProtien .box img {
+    width: 45%;
+  }
+  /* line 1228, D:/wamp/www/Protinex-main/scss/media.scss */
+  .knowProtien .box .btn {
+    float: none;
+    clear: both;
+    display: inline-block;
+  }
+  /* line 1235, D:/wamp/www/Protinex-main/scss/media.scss */
+  .ourProducts .owl3D:after {
+    width: 450px;
+    height: 450px;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -ms-background-size: contain;
+    background-size: contain;
+    left: -40%;
+  }
+  /* line 1243, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.calculator .columnMaster .column {
+    width: 50%;
+  }
+  /* line 1246, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.calculator .columnMaster .column:first-child .imgBox {
+    margin-left: 0;
+    padding-right: 0;
+  }
+  /* line 1249, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.calculator .columnMaster .column:first-child .imgBox img {
+    width: auto;
+    max-width: none;
+    margin-left: -78%;
+  }
+  /* line 1256, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.calculator .columnMaster .column:last-child {
+    margin-left: 0;
+  }
+  /* line 1262, D:/wamp/www/Protinex-main/scss/media.scss */
+  .helpSection #askExpert {
+    width: 100%;
+  }
+  /* line 1265, D:/wamp/www/Protinex-main/scss/media.scss */
+  .helpSection #blog .blogBox {
+    padding-top: 0 !important;
+    padding-left: 0;
+  }
+  /* line 1268, D:/wamp/www/Protinex-main/scss/media.scss */
+  .helpSection #blog .blogBox .imgBox {
+    position: relative;
+    width: 285px;
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+  /* line 1276, D:/wamp/www/Protinex-main/scss/media.scss */
+  header + section {
+    padding-top: 68px;
+  }
+  /* line 1281, D:/wamp/www/Protinex-main/scss/media.scss */
+  .blogMaster .blogArea .blogBox {
+    width: 100%;
+    min-height: inherit !important;
+  }
+  /* line 1287, D:/wamp/www/Protinex-main/scss/media.scss */
+  .dailyReqFor .tabLinkSec {
+    overflow-x: scroll;
+  }
+  /* line 1289, D:/wamp/www/Protinex-main/scss/media.scss */
+  .dailyReqFor .tabLinkSec ul {
+    width: 700px;
+    overflow-x: scroll;
+  }
+  /* line 1292, D:/wamp/www/Protinex-main/scss/media.scss */
+  .dailyReqFor .tabLinkSec ul li {
+    margin: 0 30px;
+  }
+  /* line 1306, D:/wamp/www/protinex/protinex-main/scss/media.scss */
+  .videoWrap, .videodesc {
+    width: 90%;
+    left: 5%;
+  }
+  /* line 1309, D:/wamp/www/protinex/protinex-main/scss/media.scss */
+  .videoWrap iframe, .videodesc iframe {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  /* line 1299, D:/wamp/www/Protinex-main/scss/media.scss */
+  .breadcrumbs {
+    margin-bottom: -80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* line 1304, D:/wamp/www/Protinex-main/scss/media.scss */
+  .logo img {
+    width: 100px;
+  }
+  /* line 1305, D:/wamp/www/Protinex-main/scss/media.scss */
+  header + section {
+    padding-top: 54px;
+  }
+  /* line 1306, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mainNavs {
+    height: calc(100vh - 53px);
+    top: 53px;
+  }
+  /* line 1307, D:/wamp/www/Protinex-main/scss/media.scss */
+  .bannerSection .bannerWave {
+    height: 50px !important;
+  }
+  /* line 1308, D:/wamp/www/Protinex-main/scss/media.scss */
+  .helpSection #blog .blogBox {
+    padding-left: 0;
+    padding-top: 320px;
+  }
+  /* line 1309, D:/wamp/www/Protinex-main/scss/media.scss */
+  .column.wid50 {
+    width: 100%;
+  }
+  /* line 1310, D:/wamp/www/Protinex-main/scss/media.scss */
+  .columnMaster .column:last-child {
+    margin-top: 20px;
+  }
+  /* line 1312, D:/wamp/www/Protinex-main/scss/media.scss */
+  .yumRecipes .testimonialData h2 {
+    font-size: 2rem;
+  }
+  /* line 1314, D:/wamp/www/Protinex-main/scss/media.scss */
+  .yumRecipes .testimonialData h2 strong {
+    padding-left: 46px;
+    font-size: 3rem;
+  }
+  /* line 1319, D:/wamp/www/Protinex-main/scss/media.scss */
+  .yumRecipes .testimonialData p {
+    max-width: 100%;
+  }
+  /* line 1323, D:/wamp/www/Protinex-main/scss/media.scss */
+  .fRight .column:nth-child(1) {
+    left: auto;
+  }
+  /* line 1324, D:/wamp/www/Protinex-main/scss/media.scss */
+  .fRight .column:nth-child(2) {
+    right: auto;
+  }
+  /* line 1327, D:/wamp/www/Protinex-main/scss/media.scss */
+  footer .container .links {
+    text-align: center;
+  }
+  /* line 1329, D:/wamp/www/Protinex-main/scss/media.scss */
+  footer .container .links li {
+    padding: 0 6px;
+    line-height: 1.0;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+  }
+  /* line 1335, D:/wamp/www/Protinex-main/scss/media.scss */
+  footer .container .links li a {
+    font-size: 1.5rem;
+  }
+  /* line 1338, D:/wamp/www/Protinex-main/scss/media.scss */
+  footer .container .links li:first-child {
+    padding-left: 0;
+  }
+  /* line 1341, D:/wamp/www/Protinex-main/scss/media.scss */
+  footer .container .links li:right-child {
+    padding-right: 0;
+  }
+  /* line 1346, D:/wamp/www/Protinex-main/scss/media.scss */
+  footer .container .sublink {
+    padding-top: 20px;
+  }
+  /* line 1348, D:/wamp/www/Protinex-main/scss/media.scss */
+  footer .container .sublink li {
+    padding: 0px 10px;
+  }
+  /* line 1350, D:/wamp/www/Protinex-main/scss/media.scss */
+  footer .container .sublink li:first-child {
+    display: block;
+  }
+  /* line 1354, D:/wamp/www/Protinex-main/scss/media.scss */
+  footer .container .sublink li:nth-child(2):before {
+    display: none;
+  }
+  /* line 1362, D:/wamp/www/Protinex-main/scss/media.scss */
+  .expertspeak .btn {
+    font-size: 1.8rem;
+  }
+  /* line 1366, D:/wamp/www/Protinex-main/scss/media.scss */
+  .expertspeak h2 strong {
+    font-size: 4rem;
+  }
+  /* line 1369, D:/wamp/www/Protinex-main/scss/media.scss */
+  .expertspeak h2:before {
+    top: -10px;
+  }
+  /* line 1373, D:/wamp/www/Protinex-main/scss/media.scss */
+  .wordOfRecipesTemplate .didKnowCarousel {
+    width: 100%;
+  }
+  /* line 1376, D:/wamp/www/Protinex-main/scss/media.scss */
+  .wordOfRecipesTemplate .chillWithSec .contentSec .topSec .titleSec h2 strong {
+    font-size: 3rem;
+  }
+  /* line 1379, D:/wamp/www/Protinex-main/scss/media.scss */
+  section h1 {
+    font-size: 2.5rem;
+  }
+  /* line 1381, D:/wamp/www/Protinex-main/scss/media.scss */
+  section h1 strong {
+    font-size: 3.0rem;
+  }
+  /* line 1385, D:/wamp/www/Protinex-main/scss/media.scss */
+  section h2 {
+    font-size: 2.5rem;
+  }
+  /* line 1387, D:/wamp/www/Protinex-main/scss/media.scss */
+  section h2 strong {
+    font-size: 3.0rem;
+  }
+  /* line 1391, D:/wamp/www/Protinex-main/scss/media.scss */
+  .vCenter.fRight .column:nth-child(1) {
+    left: 0%;
+  }
+  /* line 1394, D:/wamp/www/Protinex-main/scss/media.scss */
+  .vCenter.fRight .column:nth-child(2) {
+    right: 0%;
+  }
+  /* line 1397, D:/wamp/www/Protinex-main/scss/media.scss */
+  .column.wid40, .column.wid60 {
+    width: 100%;
+  }
+  /* line 1400, D:/wamp/www/Protinex-main/scss/media.scss */
+  .wordOfRecipesTemplate .didKnowCarousel .contentSec {
+    padding-left: 0;
+    padding-top: 20px;
+  }
+  /* line 1404, D:/wamp/www/Protinex-main/scss/media.scss */
+  .expertspeak p {
+    font-size: 1.5rem;
+    line-height: 20px;
+  }
+  /* line 1408, D:/wamp/www/Protinex-main/scss/media.scss */
+  .nutritionInfoTable h2 {
+    font-size: 3rem;
+  }
+  /* line 1411, D:/wamp/www/Protinex-main/scss/media.scss */
+  .tabSec .tabContent .col ul li {
+    width: 100%;
+    padding-right: 1%;
+    margin-bottom: 5px;
+  }
+  /* line 1412, D:/wamp/www/Protinex-main/scss/media.scss */
+  .availFlavLeft .productNameLink .btn {
+    margin-top: 12px;
+  }
+  /* line 1413, D:/wamp/www/Protinex-main/scss/media.scss */
+  .productDetailsTemplate .columnMaster .contentSec .btmCont .productHighlight ul li {
+    padding-right: 0;
+    width: 100%;
+  }
+  /* line 1414, D:/wamp/www/Protinex-main/scss/media.scss */
+  .tabSec .tabContent .col h4 {
+    font-size: 1.9rem;
+  }
+  /* line 1415, D:/wamp/www/Protinex-main/scss/media.scss */
+  .featuredRecipesBttm .btmCont .item .column.contentSec {
+    padding-left: 0;
+  }
+  /* line 1417, D:/wamp/www/Protinex-main/scss/media.scss */
+  .featuredRecipesBttm .btmCont .item .column.contentSec h4 {
+    margin-top: 10px;
+  }
+  /* line 1419, D:/wamp/www/Protinex-main/scss/media.scss */
+  .featuredRecipesBttm .btmCont .item .column.contentSec h4 {
+    font-size: 1.4rem;
+  }
+  /* line 1420, D:/wamp/www/Protinex-main/scss/media.scss */
+  .featuredRecipesBttm .topSec .titleSec h2 {
+    font-size: 3.0rem;
+  }
+  /* line 1421, D:/wamp/www/Protinex-main/scss/media.scss */
+  .lBox .iframe h3 {
+    font-size: 2.0rem;
+  }
+  /* line 1422, D:/wamp/www/Protinex-main/scss/media.scss */
+  .buyBtnOnBanner {
+    margin-top: -5px;
+  }
+  /* line 1425, D:/wamp/www/Protinex-main/scss/media.scss */
+  .sourcesOfProteinTemplate .whatIsProtein .knowAbout {
+    padding-left: 0;
+  }
+  /* line 1427, D:/wamp/www/Protinex-main/scss/media.scss */
+  .sourcesOfProteinTemplate .whatIsProtein .knowAbout ul li p {
+    width: 68%;
+    font-size: 1.8rem;
+    line-height: 20px;
+  }
+  /* line 1433, D:/wamp/www/Protinex-main/scss/media.scss */
+  .sourcesOfProteinTemplate .columnMaster .column:last-child ul li p {
+    width: 68%;
+  }
+  /* line 1436, D:/wamp/www/Protinex-main/scss/media.scss */
+  .sourcesOfProteinTemplate .whatIsProtein .totalBodySec .content p, .sourcesOfProteinTemplate .whatIsProtein .totalBodySec .content h4 {
+    line-height: 18px;
+    font-size: 1.4rem;
+  }
+  /* line 1440, D:/wamp/www/Protinex-main/scss/media.scss */
+  section h1 {
+    margin-top: 2px;
+  }
+  /* line 1444, D:/wamp/www/Protinex-main/scss/media.scss */
+  .proteinSourcesSec .compoTitle h2 {
+    font-size: 3rem;
+  }
+  /* line 1447, D:/wamp/www/Protinex-main/scss/media.scss */
+  .proteinSourcesSec .compoTitle p {
+    font-size: 1.4rem;
+  }
+  /* line 1451, D:/wamp/www/Protinex-main/scss/media.scss */
+  .sourcesOfProteinTemplate .whatIsProtein .knowAbout h3 {
+    font-size: 2.5rem;
+  }
+  /* line 1454, D:/wamp/www/Protinex-main/scss/media.scss */
+  .proteinSourcesSec .sourceList ul li h3 {
+    font-size: 2.5rem;
+  }
+  /* line 1457, D:/wamp/www/Protinex-main/scss/media.scss */
+  .proteinSourcesSec .sourceList ul li h5 {
+    font-size: 1.8rem;
+  }
+  /* line 1460, D:/wamp/www/Protinex-main/scss/media.scss */
+  .thePowerOfProteinSec .whyImportentList ul li {
+    padding: 0 5px 35px;
+  }
+  /* line 1462, D:/wamp/www/Protinex-main/scss/media.scss */
+  .thePowerOfProteinSec .whyImportentList ul li p {
+    font-size: 1.4rem;
+    line-height: 18px;
+  }
+  /* line 1467, D:/wamp/www/Protinex-main/scss/media.scss */
+  .dailyRequirementTemplate .titleSec h2 {
+    font-size: 2.5rem;
+  }
+  /* line 1470, D:/wamp/www/Protinex-main/scss/media.scss */
+  .dailyRequirementTemplate .compoTitle h3 {
+    font-size: 2.2rem;
+    line-height: 26px;
+  }
+  /* line 1474, D:/wamp/www/Protinex-main/scss/media.scss */
+  .deficiencyProteinTemplate .whyImportentList .parasec {
+    max-width: 100%;
+  }
+  /* line 1476, D:/wamp/www/Protinex-main/scss/media.scss */
+  .deficiencyProteinTemplate .whyImportentList .parasec .btn {
+    font-size: 1.6rem;
+  }
+  /* line 1481, D:/wamp/www/Protinex-main/scss/media.scss */
+  #letsStart h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  /* line 1485, D:/wamp/www/Protinex-main/scss/media.scss */
+  #letsStart .column:last-child {
+    margin-top: 10px;
+  }
+  /* line 1488, D:/wamp/www/Protinex-main/scss/media.scss */
+  #letsStart .subHead {
+    font-size: 2.0rem;
+  }
+  /* line 1490, D:/wamp/www/Protinex-main/scss/media.scss */
+  #letsStart .subHead strong {
+    font-size: 2.5rem;
+  }
+  /* line 1494, D:/wamp/www/Protinex-main/scss/media.scss */
+  #letsStart p {
+    font-size: 1.4rem;
+  }
+  /* line 1498, D:/wamp/www/Protinex-main/scss/media.scss */
+  .protineCalc .title {
+    font-size: 2.5rem;
+    line-height: 30px;
+  }
+  /* line 1502, D:/wamp/www/Protinex-main/scss/media.scss */
+  #letsGet .measurementSec .fieldBox {
+    width: 100%;
+  }
+  /* line 1505, D:/wamp/www/Protinex-main/scss/media.scss */
+  .genderRadioSec .toolSec {
+    width: 100%;
+  }
+  /* line 1508, D:/wamp/www/Protinex-main/scss/media.scss */
+  .calcTemplate .foodItemsSec ul.lists > li {
+    padding: 0 15px 20px 15px;
+  }
+  /* line 1511, D:/wamp/www/Protinex-main/scss/media.scss */
+  .genderRadioSec ul li input[type="radio"] + label {
+    font-size: 2.0rem;
+  }
+  /* line 1514, D:/wamp/www/Protinex-main/scss/media.scss */
+  .calcTemplate .foodItemsSec ul.lists > li .genderRadioSec ul li:nth-child(2) input[type="radio"] + label {
+    padding-left: 37px;
+  }
+  /* line 1517, D:/wamp/www/Protinex-main/scss/media.scss */
+  .calcTemplate .foodItemsSec ul.lists > li .genderRadioSec ul li:nth-child(2) input[type="radio"] + label:before {
+    left: 7px;
+  }
+  /* line 1521, D:/wamp/www/Protinex-main/scss/media.scss */
+  .calcTemplate .foodItemsSec .btn {
+    float: none !important;
+    display: block;
+    width: 115px;
+    text-align: center;
+    margin: 5px auto;
+  }
+  /* line 1527, D:/wamp/www/Protinex-main/scss/media.scss */
+  .calcTemplate .foodItemsSec .btn.addMoreBtn {
+    width: 185px;
+    margin-bottom: 10px;
+  }
+  /* line 1533, D:/wamp/www/Protinex-main/scss/media.scss */
+  .calcTemplate .backBtn {
+    position: inherit;
+    float: right;
+  }
+  /* line 1537, D:/wamp/www/Protinex-main/scss/media.scss */
+  .calcTemplate #score .recommendSec .intakeProtein p {
+    font-size: 1.5rem;
+  }
+  /* line 1540, D:/wamp/www/Protinex-main/scss/media.scss */
+  .calcTemplate #score .inadequateSec {
+    padding: 20px 10px;
+  }
+  /* line 1546, D:/wamp/www/Protinex-main/scss/media.scss */
+  .error-Pagetemplate .error-page div:nth-child(1) {
+    padding: 0;
+    text-align: center;
+  }
+  /* line 1549, D:/wamp/www/Protinex-main/scss/media.scss */
+  .error-Pagetemplate .error-page div:nth-child(1) img {
+    width: 70%;
+  }
+  /* line 1554, D:/wamp/www/Protinex-main/scss/media.scss */
+  .error-Pagetemplate .error-page .errorTxt {
+    border: none;
+    border-top: 1px solid #c0c0c0;
+    max-width: inherit;
+    text-align: center;
+    padding: 3% 1%;
+  }
+  /* line 1557, D:/wamp/www/Protinex-main/scss/media.scss */
+  .error-Pagetemplate .error-page .errorTxt .btn {
+    float: none;
+    display: inline-block;
+  }
+  /* line 1562, D:/wamp/www/Protinex-main/scss/media.scss */
+  #lightboxWrap .lightbox .desktop {
+    display: none;
+  }
+  /* line 1563, D:/wamp/www/Protinex-main/scss/media.scss */
+  #lightboxWrap .lightbox .device {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* line 1567, D:/wamp/www/Protinex-main/scss/media.scss */
+  .media-master .media-wrap li {
+    width: 100%;
+    padding: 20px 20px 20px 0;
+  }
+  /* line 1571, D:/wamp/www/Protinex-main/scss/media.scss */
+  .media-master .media-wrap li h3 {
+    height: auto;
+  }
+  /* line 1578, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mythfact-content .myth-text h3 {
+    font-size: 2rem;
+  }
+  /* line 1579, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mythfact-content .myth-text h4 {
+    font-size: 1.8rem;
+    padding-bottom: 14px;
+  }
+  /* line 1582, D:/wamp/www/Protinex-main/scss/media.scss */
+  .yumRecipes .yumRecipesData h2 strong {
+    font-size: 5rem;
+  }
+  /* line 1586, D:/wamp/www/Protinex-main/scss/media.scss */
+  .yumRecipes .yumRecipesData h2:before {
+    bottom: 12px;
+  }
+  /* line 1592, D:/wamp/www/Protinex-main/scss/media.scss */
+  .knowProtien .box p {
+    width: 55%;
+    font-size: 1.2rem;
+  }
+  /* line 1596, D:/wamp/www/Protinex-main/scss/media.scss */
+  .knowProtien .box a[href*="hashtag"] {
+    font-size: 1.3rem;
+  }
+  /* line 1599, D:/wamp/www/Protinex-main/scss/media.scss */
+  .knowProtien .box img {
+    width: 45%;
+    padding-right: 10px;
+  }
+  /* line 1605, D:/wamp/www/Protinex-main/scss/media.scss */
+  .leftBg:before {
+    width: 135px;
+    height: 142px;
+    background-size: contain;
+  }
+  /* line 1610, D:/wamp/www/Protinex-main/scss/media.scss */
+  .rightBg:before {
+    width: 135px;
+    height: 142px;
+    background-size: contain;
+  }
+  /* line 1615, D:/wamp/www/Protinex-main/scss/media.scss */
+  .ourProducts .owl3D:after {
+    width: 300px;
+  }
+  /* line 1620, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.calculator .columnMaster .column {
+    width: 100%;
+  }
+  /* line 1624, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.calculator .columnMaster .column:first-child .imgBox img {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  /* line 1631, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.calculator .columnMaster .column:last-child {
+    margin-left: 0;
+  }
+  /* line 1638, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.myths .vCenter.fRight .column:nth-child(1) {
+    left: 0;
+  }
+  /* line 1640, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.myths .vCenter.fRight .column:nth-child(1) .imgBox.svgBox {
+    margin: 0 auto;
+  }
+  /* line 1644, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.myths .vCenter.fRight .column:nth-child(2) {
+    right: 0;
+    left: auto;
+  }
+  /* line 1648, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.myths .column {
+    width: 100% !important;
+  }
+  /* line 1650, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.myths .column .imgBox.svgBox {
+    margin-right: 0;
+    left: auto;
+  }
+  /* line 1657, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.recipes .vCenter.fRight .column:nth-child(1) {
+    left: 0;
+  }
+  /* line 1659, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.recipes .vCenter.fRight .column:nth-child(1) .imgBox.svgBox {
+    margin: 0 auto;
+  }
+  /* line 1663, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.recipes .vCenter.fRight .column:nth-child(2) {
+    right: 0;
+    left: auto;
+  }
+  /* line 1667, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.recipes .column {
+    width: 100% !important;
+  }
+  /* line 1669, D:/wamp/www/Protinex-main/scss/media.scss */
+  .customHomepage section.recipes .column .imgBox.svgBox {
+    margin-right: 0;
+    left: auto;
+  }
+  /* line 1675, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mainNavs .searchBtn {
+    right: 140px;
+    top: -4px;
+  }
+  /* line 1679, D:/wamp/www/Protinex-main/scss/media.scss */
+  #blog .blogBox .owl-dots {
+    margin-top: 0;
+  }
+  /* line 1682, D:/wamp/www/Protinex-main/scss/media.scss */
+  .blogCarousel.owl-carousel {
+    margin-bottom: 0;
+  }
+  /* line 1685, D:/wamp/www/Protinex-main/scss/media.scss */
+  .testimonial .testimonialContent h2 + p {
+    padding: 10px 0px 45px 0px;
+  }
+  /* line 1688, D:/wamp/www/Protinex-main/scss/media.scss */
+  .placeholder {
+    font-size: 1.6rem;
+  }
+  /* line 1691, D:/wamp/www/Protinex-main/scss/media.scss */
+  header .mainNavs .searchBtn {
+    top: -8px;
+    right: 125px;
+  }
+  /* line 1695, D:/wamp/www/Protinex-main/scss/media.scss */
+  header .logo {
+    width: 100px;
+  }
+  /* line 1698, D:/wamp/www/Protinex-main/scss/media.scss */
+  header .hamburger {
+    margin: 10px 10px 14px 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  /* line 1704, D:/wamp/www/Protinex-main/scss/media.scss */
+  .stacktable.small-only .st-val {
+    width: 18%;
+  }
+  /* line 1707, D:/wamp/www/Protinex-main/scss/media.scss */
+  .yumRecipes .yumRecipesData h2 strong {
+    font-size: 4rem;
+  }
+  /* line 1710, D:/wamp/www/Protinex-main/scss/media.scss */
+  .infoSaveUs {
+    line-height: 12px;
+  }
+  /* line 1713, D:/wamp/www/Protinex-main/scss/media.scss */
+  .mainNavs .searchBtn {
+    right: 130px;
+    top: -4px;
+  }
+  /* line 1717, D:/wamp/www/Protinex-main/scss/media.scss */
+  .dailyReqFor .tab-contents .content ul li {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+}
+
+/* Height Specific*/
+
+/*# sourceMappingURL=../css/media.map */

@@ -1,0 +1,70 @@
+{#
+/**
+ * @file
+ * Himalaya's theme implementation to display a single page.
+ *
+ */
+#}
+<div id="page-wrapper" class="wrapper">
+  <header>
+		<div class="container">
+			<div class="hamburger"><span></span><span></span><span></span></div>
+			{{ page.header }}
+			<!--<a class="logo fl" href="/"><img src="{{ logopath }}" /></a>-->
+			{{ page.logo }}
+			<nav class="mainNavs">
+				<a class="searchBtn" href="javascript:;"></a>
+				{{ page.primary_menu }}
+			</nav>
+		</div>
+	</header>
+  <section class="breadcrumbs">
+		{{ page.breadcrumb }}
+	</section>
+	{{ page.help }}
+<section class="searchWrap" id="srchList">
+	<div class="container">
+		{{ page.content }}
+		<div class="pagination"></div>
+
+	</div>
+	</section>
+
+
+
+	<footer id="footer">
+		{% if page.footer %}
+			<div class="ocean">
+				<div class="wave"></div>
+				<div class="wave"></div>
+			</div>
+			{{ page.footer }}
+		{% endif %}
+	</footer>
+	<div class="searchLayer">
+		<span class="close"></span>
+		<div class="formBox">
+		<form action="/search" method="post" id="askForm">
+			<div class="fieldBox wid100 requiredField">
+				<div class="inputBox">
+					<input name="search" id="name" type="text" placeholder="What are you looking for?" />
+				</div>
+			</div>
+			<button type="submit" class="searchBtn"></button>
+		</form>
+		</div>
+	</div>
+	<div class="lBoxMaster">
+		<div class="overlay"></div>
+		<div class="lBox">
+			<span class="close">X</span>
+			<div class="container">
+		    <div class="iframe">
+		      <h3 style="display:none;"></h3>
+			    <iframe width="100%" height="100%" src=""></iframe>
+		    </div>
+				<div class="lContent"></div>
+			</div>
+		</div>
+	</div>
+</div>

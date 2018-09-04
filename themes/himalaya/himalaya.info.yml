@@ -1,0 +1,47 @@
+name: Himalaya
+type: theme
+base theme: classy
+description: 'A Himalaya theme is  flexible, recolorable theme with many regions and a responsive, mobile-first layout.'
+package: Custom
+# version: VERSION
+# core: 8.x
+libraries:
+  - himalaya/global-styling
+  - himalaya/global-scripts
+regions:
+  header: 'Header'
+  banner: 'Banner'
+  logo: 'Logo'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  help: 'Help' 
+  breadcrumb: 'Breadcrumb'
+  content: 'Content'
+  recipes: 'Recipes'
+  know_protein: 'Know Protein'
+  home_product: 'Home Product'
+  home_protein_myths: 'Home Protein Myths'
+  home_protein_count: 'Home Protein Count'
+  home_meets_taste: 'Home Meets Taste'
+  product_flavours: 'Product Flavours'
+  media: 'Media'
+  faqs: 'FAQs'
+  testimonial: 'Testimonial'
+  sidebar_right: 'Sidebar Right'
+  sidebar_left: 'Sidebar Left'
+  ask_the_expert: 'Ask the Expert'
+  search: 'Search'
+  footer: 'Footer'
+
+
+# Information added by Drupal.org packaging script on 2015-11-09
+# version: '8.x-5.x-dev'
+# core: '8.x'
+# project: 'himalaya'
+# datestamp: 1447044549
+
+# Information added by Drupal.org packaging script on 2016-07-19
+version: '8.x-5.5'
+core: '8.x'
+project: 'himalaya'
+datestamp: 1468939724

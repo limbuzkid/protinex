@@ -1,0 +1,6 @@
+name: Protinex Module
+description: List of Custom Admin Links.
+package: Custom
+
+type: module
+core: 8.x

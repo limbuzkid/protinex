@@ -1,0 +1,156 @@
+{#
+/**
+ * @file
+ * Theme override for the basic structure of a single Drupal page.
+ *
+ * Variables:
+ * - logged_in: A flag indicating if user is logged in.
+ * - root_path: The root path of the current page (e.g., node, admin, user).
+ * - node_type: The content type for the current node, if the page is a node.
+ * - head_title: List of text elements that make up the head_title variable.
+ *   May contain or more of the following:
+ *   - title: The title of the page.
+ *   - name: The name of the site.
+ *   - slogan: The slogan of the site.
+ * - page_top: Initial rendered markup. This should be printed before 'page'.
+ * - page: The rendered page markup.
+ * - page_bottom: Closing rendered markup. This variable should be printed after
+ *   'page'.
+ * - db_offline: A flag indicating if the database is offline.
+ * - placeholder_token: The token for generating head, css, js and js-bottom
+ *   placeholders.
+ *
+ * @see template_preprocess_html()
+ */
+#}
+{%
+  set body_classes = [
+    logged_in ? 'user-logged-in',
+    not root_path ? 'path-frontpage' : 'path-' ~ root_path|clean_class,
+    path_info.args ? 'path-' ~ path_info.args,
+    node_type ? 'node--type-' ~ node_type|clean_class,
+    db_offline ? 'db-offline',
+    current_path ? 'context' ~ current_path|clean_class,
+  ]
+  
+%}
+
+{% set cur_url = path('<current>') %}
+
+<!DOCTYPE html>
+<html xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <head>
+    <head-placeholder token="{{ placeholder_token|raw }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,  user-scalable = no"/>
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{ url('<current>') }}">
+    {% if 'protinex-original' in cur_url  %}
+      <meta property="og:title" content="Protinex Original">
+      <meta property="og:description" content="Protein is one of the most important everyday nutrients for all of us. However due to a busy lifestyle, it gets difficult to meet our daily protein needs. Protinex is the perfect partner for you in the race of life">
+      <meta property="og:image" content="http://52.66.156.173//sites/default/files/protinex/products/01-Protinex-Original_0.png">
+    {% endif %}
+    {% if 'protinex-junior' in cur_url  %}
+      <meta property="og:title" content="Protinex Junior">
+      <meta property="og:description" content="Protinex Junior is formulated to fix what's missing in your child’s diet. It serves as a crucial supplement for the nutritional requirement for the child’s all-round growth.">
+      <meta property="og:image" content="http://52.66.156.173//sites/default/files/protinex/products/Protinex-Junio-Chocolate_0.png">
+    {% endif %}
+    {% if 'protinex-mama' in cur_url  %}
+      <meta property="og:title" content="Protinex Mama">
+      <meta property="og:description" content="Mama Protinex is a protein-rich supplement essential for the physical and brain development of the foetus. It satisfies that 'something' missing in your diet to ensure the optimum health and development of your child">
+      <meta property="og:image" content="http://52.66.156.173//sites/default/files/protinex/products/Protinex-Mama-Vanilla_0.png">
+    {% endif %}
+    {% if 'protinex-bytes' in cur_url  %}
+      <meta property="og:title" content="Protinex Bytes">
+      <meta property="og:description" content="Protein is one of the most important everyday nutrients for all of us. However due to a busy lifestyle, it gets difficult to meet our daily protein needs.">
+      <meta property="og:image" content="http://52.66.156.173//sites/default/files/protinex/products/Protinex-Bytes.png">
+    {% endif %}
+    {% if 'protinex-diabetes-care' in cur_url  %}
+      <meta property="og:title" content="Protinex Diabetes Care">
+      <meta property="og:description" content="Protinex Diabetes Care is a protein supplement made to serve that something missing in the nutrition needed to manage blood sugar levels. It also helps in managing weight, cholesterol and satisfies the special nutritional needs of the body.">
+      <meta property="og:image" content="http://52.66.156.173//sites/default/files/protinex/products/Protinex-Diabetes-Care-vanilla.png">
+    {% endif %}
+    {% if 'protinex-grow' in cur_url  %}
+      <meta property="og:title" content="Protinex Grow">
+      <meta property="og:description" content="Preteens and teens between 8-15 years experience a 2nd (MAKE THIS SUPERSCRIPT) growth spurt. They experience a rapid increase in height, weight and overall growth. This is the LAST opportunity for your child to attain optimal growth.">
+      <meta property="og:image" content="http://52.66.156.173//sites/default/files/protinex/products/Protinex-Grow_Chocolate.png">
+    {% endif %}
+    {% if 'the-world-of-proteins' in cur_url  %}
+      <meta property="og:title" content="The World of Proteins">
+      <meta property="og:description" content="Proteins are called the building blocks of life. Like Carbohydrates and Fat, Protein is macronutrient, important for our growth as well as to provide the body with energy.">
+      <meta property="og:image" content="http://52.66.156.173//sites/default/files/protinex/images/reciepeImg.jpg">
+    {% endif %}
+    {% if 'types-of-protein' in cur_url  %}
+      <meta property="og:title" content="Types of Protein">
+      <meta property="og:description" content="Did you know that after water, protein is the 2nd most important nutrient in our body? It is vital for our healthy growth and muscle wear and tear. It is omnipresent and can be found in skin, hair, blood, muscles, organs, and even fingernails. From digestion, to strengthening muscles to repairing tissues and transporting nutrients, protein plays an important role in every bodily process.">
+      <meta property="og:image" content="http://52.66.156.173//sites/default/files/inline-images/total-body-weight.png">
+    {% endif %}
+    {% if 'myths-and-facts' in cur_url  %}
+      <meta property="og:title" content="Myths and Facts">
+      <meta property="og:description" content="Here, we hope to clarify those so that proteins are no longer misunderstood and you understand that ‘something’ missing in your diet.">
+      <meta property="og:image" content="http://52.66.156.173//sites/default/files/inline-images/understand-protine.png">
+    {% endif %}
+    {% if 'recipes' in cur_url  %}
+      <meta property="og:title" content="#ChillWithProtein RECIPES">
+      <meta property="og:description" content="Make the king of all smoothies with the Mango Protinex Smoothie. It combines nutrition, taste and your favourite fruit – Mango.">
+      <meta property="og:image" content="http://52.66.156.173//sites/default/files/protinex/recipes/Mixed-Berry--Protinex-Smoothie%21_1.jpg">
+    {% endif %}
+    
+    <title>{{ head_title|safe_join(' | ') }}</title>
+    <css-placeholder token="{{ placeholder_token|raw }}">
+    <js-placeholder token="{{ placeholder_token|raw }}">
+    {% if 'contact-us' in cur_url  %}
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0eQW6nNcxW4uW87XkWvIhrsINVz7sPNk&callback=initMap"></script>
+      <script>
+        function initMap() {
+          var uluru = {lat:19.0924753, lng:72.8935739};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 17,
+            center: uluru
+          });
+          var contentString = '<div id="content"><p>Nutricia international PVT. LTD</p><p>The Centrium, Office Premise No. 1</p><p>3rd Floor, Level 4 Phoenix Market City</p><p>LBS Marg, Kurla (West)</p><p>Mumbai - 400 070</p></div>';
+          var infowindow = new google.maps.InfoWindow({
+            content: contentString
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+            title: 'Danone'
+          });
+          marker.addListener('click', function() {
+            infowindow.open(map, marker);
+          });
+        }
+      </script>
+    {% endif %}
+
+  </head>
+  <body{{ attributes.addClass(body_classes) }}>
+
+    <div class="loader">
+      <div align="center" class="fond">
+        <div class="contener_general">
+          <div class="contener_mixte">
+            <div class="ballcolor ball_1">&nbsp;</div>
+          </div>
+          <div class="contener_mixte">
+            <div class="ballcolor ball_2">&nbsp;</div>
+          </div>
+          <div class="contener_mixte">
+            <div class="ballcolor ball_3">&nbsp;</div>
+          </div>
+          <div class="contener_mixte">
+            <div class="ballcolor ball_4">&nbsp;</div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!--<a href="#main-content" class="visually-hidden focusable skip-link">
+        {{ 'Skip to main content'|t }}
+      </a>-->
+      {{ page_top }}
+      {{ page }}
+      {{ page_bottom }}
+    <js-bottom-placeholder token="{{ placeholder_token|raw }}">    
+  </body>
+</html>
